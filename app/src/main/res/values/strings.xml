@@ -1,0 +1,261 @@
+<resources>
+    <string name="app_name">"Calculadora de Fisica "</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+
+
+
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+
+
+
+    <string name="MRU">Calculadora de MRU</string>
+
+
+    <string name="MRUA">Calculadora de MRUA</string>
+    <string name="cuerpo1_mrua">El movimiento rectilíneo uniformemente acelarado o MRUA es un movimiento que ocurre sobre una línea recta con aceleración constante. En el MRUA la aceleración es constante, nunca va a cambiar, siempre es la misma. Mucha atención, lo constante es la aceleración, no la velocidad.</string>
+
+    <string name="cuerpo2_mrua" translatable="false">Vf = Vo + a * t
+                                \n\nd = ((Vo + vf) / 2 ) * t
+                                 \n\nd = Vo * t + ( a * t² ) / 2
+                                  \n\nVf² = Vo² + 2 * a * d
+                                   \n\nx = Vo ± a/2 (2*n -1)
+                    </string>
+
+
+    <string name="descripcion">Por favor ingrese dos valores, dejando vacio el campo que desea hallar:</string>
+    <string name="descripcion2">Por favor ingrese los valores que tenga a la mano:</string>
+
+
+    <string name="Velocidad">Velocidad:</string>
+    <string name="Velocidad_inicial">Velocidad Inicial:</string>
+    <string name="Velocidad_final">Velocidad Final:</string>
+    <string name="Velocidad_inicial_x">Velocidad inicial en x:</string>
+    <string name="Velocidad_inicial_y">Velocidad inicial en y:</string>
+
+
+    <string name="rapidez_angular">Rapidez Angular:</string>
+    <string name="rapidez_angular_inicial">Rapidez Angular Inicial:</string>
+    <string name="rapidez_angular_final">Rapidez Angular Final:</string>
+
+
+    <string name="rapidez_tangencial">Rapidez tangencial:</string>
+    <string name="rapidez_tangencial_inicial">Rapidez tangencial inicial:</string>
+    <string name="rapidez_tangencial_final">Rapidez tangencial final:</string>
+
+
+    <string name="Longitud_arco">Longitud de arco:</string>
+    <string name="Radio">Radio:</string>
+    <string name="periodo">Periodo:</string>
+    <string name="frecuencia">Frecuencia:</string>
+
+
+    <string name="aceleración">Aceleración:</string>
+    <string name="aceleracion_angular">Aceleración Angular:</string>
+    <string name="aceleracion_tangencial">Aceleración Tangencial:</string>
+    <string name="aceleracion_centripeta">Aceleración Centripeta:</string>
+
+
+    <string name="distancia">Distancia:</string>
+    <string name="desplazamiento_horizontal">Desplazamiento horizontal:</string>
+    <string name="angulo">Ángulo:</string>
+    <string name="angulo_tiro">Ángulo de tiro:</string>
+    <string name="gravedad">Gravedad:</string>
+
+    <string name="altura">Altura:</string>
+    <string name="altura_inicial">Altura inicial:</string>
+    <string name="altura_maxima">Altura maxima:</string>
+
+
+    <string name="tiempo">Tiempo:</string>
+    <string name="tiempo_total">Tiempo total de vuelo:</string>
+    <string name="calcular">Calcular</string>
+
+
+    <string name="metros" translatable="false">m</string>
+    <string name="segundos" translatable="false">s</string>
+    <string name="metros_segundos" translatable="false">m/s</string>
+    <string name="metros_segundos_2" translatable="false">m/s²</string>
+    <string name="radianes" translatable="false">rad</string>
+    <string name="radianes_segundos" translatable="false">rad/s</string>
+    <string name="radianes_segundos_2" translatable="false">rad/s²</string>
+    <string name="hercio" translatable="false">hz</string>
+    <string name="grados" translatable="false">º</string>
+
+
+    <string name="MPCL">Calculadora de MPCL</string>
+    <string name="MPCL2">MPCL</string>
+
+    <string name="cuerpo_mpcl">El movimiento parabólico de caída libre o MPCL, es un movimiento
+        cuya trayectoria es una curva llamada parábola, en el cual el móvil se mueve únicamente bajo
+        la influencia de la gravedad una vez que es liberado (en vacío, sin aire).</string>
+
+    <string name="cuerpo2_mpcl">El movimiento parabólico de caída libre es un movimiento compuesto formado por 2
+        movimientos que se realizan al mismo tiempo y de forma independiente. En el eje horizontal «x» se desarrolla
+        un movimiento rectilíneo uniforme o MRU; mientras que en el eje vertical «y» se desarrolla un movimiento vertical de caída libre o MVCL.</string>
+
+    <string name="formula_mpcl">Fórmulas velocidad inicial</string>
+    <string name="formula2_mpcl">Vox = Vo * CosΘ       |       Voy = Vo * SenΘ \n\nVo = √( Vox² + Voy² ) </string>
+
+    <string name="cuerpo3_mpcl">Donde:\n\n  Vo : velocidad inicial.\n  Vox : velocidad inicial en el eje x (componente horizontal).
+      \n Voy : velocidad inicial en el eje y (componente vertical).
+    </string>
+
+
+    <string name="formuladis_mpcl">Fórmula de distancia</string>
+    <string name="formula3_mpcl">d = Vox * t   </string>
+
+    <string name="cuerpo4_mpcl">Donde:\n\n  d :distancia recorrida en el eje «x» o eje horizontal.\n  t : tiempo del recorrido.</string>
+
+
+    <string name="formulas_mpcl">Fórmula MPCL en el eje y</string>
+
+    <string name="cuerpo5_mpcl">Vfy = Voy ± g * t     \n\nh = Voy * t ± (g * t²) /2    \n\nh=( Voy + Vfy ) / ( 2 ) * t
+        \n\nVfy² = Voy² ± 2 * g * h            \n\nDonde:\n\n  Vfy :velocidad final en el eje «y».\n  g : aceleración de la gravedad (g = 9,8 m/s²).</string>
+
+    <string name="formulasadicionales_mpcl">Fórmula adicionales</string>
+
+    <string name="cuerpo6_mpcl">Hmax = ( Vo² * Sen²Θ ) / ( 2 * g )     \n\nTvuelo = ( 2 * Vo * SenΘ) / ( g )   \n\nR=( Vo² * sen2Θ ) / ( g )
+        \n\nDonde:\n\n  Hmax : Altura maxima.\n  Tvuelo :Tiempo de vuelo. \n  R : Alcance horizontal.\n  Θ : ángulo del vector velocidad inicial con el eje horizontal x </string>
+
+
+    <string name="tiro_vertical">Calculadora de tiro vertical</string>
+    <string name="title1_tv">Tiro vertical</string>
+    <string name="cuerpo1_tv">El Tiro Vertical Ascendente es aquel en el que se lanza un cuerpo hacia el cielo. Al
+                                iniciar este movimiento, el cuerpo tiene una velocidad máxima, partiendo de la mano o de
+                                la maquinaria que lo esté lanzando.
+
+                                \n\nPosteriormente, en su trayecto por el aire, la aceleración de la gravedad va a ir
+                                contrarrestando ese movimiento, frenando poco a poco el objeto, con una aceleración
+                                negativa de 9.8 m/s2.
+                                \n\nAl llegar a una velocidad vertical de 0 m/s, se quedará en un instante suspendido en el
+                                aire, para ser afectado inmediatamente por la aceleración de la gravedad, ahora si en un
+                                sentido positivo, experimentando una Caída Libre.</string>
+
+    <string name="title2_tv">Formulas \n\n  Velocidad inicial:</string>
+    <string name="cuerpo2_tv" translatable="false"> Vo = g * t   \n\nVo = √( 2 * g * h)   </string>
+    <string name="title3_tv">Tiempo</string>
+    <string name="cuerpo3_tv" translatable="false"> t = Vo / g    </string>
+
+    <string name="title4_tv">Altura maxima</string>
+    <string name="cuerpo4_tv"> hmax = Vo² / 2 * g    </string>
+
+    <string name="title5_tv">Altura </string>
+
+    <string name="cuerpo5_tv">Sirve para calular la altura en cualquier instante de tiempo. \n\nh = Vo * t + ½ * g * t²    </string>
+
+    <string name="title6_tv">Donde: </string>
+    <string name="cuerpo6_tv">Vf = Velocidad final (también podemos simbolizarla Vf).En el Tiro vertical es cero.
+                              \nVo = Velocidad inicial. En el tiro vertical no puede ser cero (si no, no arrancaría).
+                              \nt = tiempo.
+                              \nh = altura.</string>
+
+
+    <string name="CL">Calculadora de caida libre</string>
+    <string name="title1_CL">Caida libre</string>
+    <string name="cuerpo1_cl">El movimiento de vertical de caída libre o MVCL es un movimiento en el cual el móvil
+        describe una trayectoria vertical y se mueve únicamente bajo la influencia de la gravedad una vez que es liberado.
+          </string>
+    <string name="title2_CL">Formulas:</string>
+
+    <string name="cuerpo2_cl" translatable="false">
+          Vf = Vo ± g * t
+        \n\nh = Vo * t ± ( g * t² ) / 2
+         \n\nh = ( ( Vo + Vf ) / 2 ) * t
+        \n\nVf² = Vo² ± 2 g * h
+        \n\nhn = Vo ±  g / 2 (2 * n -1)
+    </string>
+
+    <string name="cuerpo3_cl">
+        Vf = Velocidad final.
+        \n\nVo = Velocidad inicial.
+        \n\nt = tiempo.
+        \n\ng = aceleración de la gravedad o gravedad (9,8 m/s²).
+        \n\nh = altura recorrida.
+        \n\nhn : altura recorrida en el n-ésimo segundo
+
+    </string>
+
+
+    <string name="MCUA">Calculadora de MCUA</string>
+    <string name="title1_mcua"> MCUA</string>
+
+    <string name="cuerpo1_mcua">El movimiento circular uniformemente acelerado (MCUA),es un movimiento circular cuya aceleración angular α es constante.
+                                Por ello, a medida que avanza el tiempo, su velocidad cambia de manera constante.</string>
+
+
+    <string name="title2_mcua">Ecuaciones angulares:</string>
+
+    <string name="cuerpo2_mcua" translatable="false">ωf = ω0 ± α * t
+                                \n\nθ =  ω0 * t ± (α * t²) / 2
+                                \n\nθ =(( ω0 +  ωf) / 2) * t
+                                \n\nωf² =  ω0² ± 2 * α * θ
+                                \n\n\nUsar (+) si la rapidez angular aumenta.
+                                    \nUsar (-) Si la rapidez angular disminuye.
+    </string>
+
+    <string name="title3_mcua">Donde:</string>
+
+    <string name="cuerpo3_mcua">ω0 = rapidez angular inicial (rad/s).
+                                \n\nωf = rapidez angular final (rad/s).
+                                \n\nα = aceleración tangencial (rad/s²).
+                                \n\nt = tiempo(s).
+                                \n\nθ = desplazamiento angular (rad).
+    </string>
+
+    <string name="title4_mcua">Ecuaciones tangenciales:</string>
+    <string name="cuerpo4_mcua" translatable="false">Vf = Vo ± at * t
+                                \n\nL = Vo * t ± (at * t²) / 2
+                                \n\nL = ((Vo + Vf) / 2) * t
+                                \n\nVf² = Vo² ± 2 * at * L
+
+    </string>
+
+    <string name="cuerpo5_mcua">Vf = rapidez tangencial final (m/s).
+                                \n\nVo = rapidez tangencial inicial (m/s).
+                                \n\nat = aceleración tangencial (m/s²).
+                                \n\nt = tiempo (s).
+                                \n\nL = Longitud de arco (m)
+
+    </string>
+
+
+    <string name="MCU">Calculadora de MCU</string>
+    <string name="title_mcu">Movimiento circular uniforme</string>
+
+    <string name="cuerpo1_mcu"> El movimiento circular uniforme o MCU es el movimiento que realiza un objeto describiendo
+        una trayectoria circular con rapidez constante. La rapidez del móvil nunca va a cambiar.</string>
+
+    <string name="cuerpo2_mcu">θ = desplazamiento angular (rad).
+                                \n\nω= rapidez angular (rad/s).
+                                \n\nt = tiempo(s).
+                                \n\nL = Longitud de arco (m).
+                                \n\nV = rapidez tangencial (m/s).
+                                \n\nR = radio de giro (m/s).
+                                \n\nac = aceleración centrípeta (m/s²).
+                                \n\nT = período (s). Se refiere al tiempo empleado para dar una vuelta completa.
+                                \n\nf =  frecuencia (Hz). Es el número de vueltas por unidad de tiempo que da el cuerpo.
+
+    </string>
+    <string name="title3_CL">Donde:</string>
+
+
+    <string name="title_mru">MRU</string>
+
+    <string name="cuerpo_mru">El movimiento rectilíneo uniforme o MRU es un movimiento que se desarrolla sobre una línea recta con velocidad constante.</string>
+
+    <string name="cuerpo2_mru">Distancia: metros (m).  \n\nTiempo: segundos (s).\n\nRapidez: metros por segundo (m/s).</string>
+
+</resources>

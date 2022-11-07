@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/layaoutbackground"
+            android:elevation="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/angulo" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/txtangulo_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_angulo_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtangulo_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/clear_angulo_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:elevation="4dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/rapidez_angular" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtrapidez_angular_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_rapidez_angular_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtrapidez_angular_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_rapidez_angular_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:elevation="4dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/tiempo" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txttiempo_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_tiempo_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txttiempo_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_tiempo_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/rapidez_tangencial" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtrapidez_tangencial_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_rapidez_tangencial_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtrapidez_tangencial_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_rapidez_tangencial_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/Longitud_arco" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtlongitud_arco_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_longitud_arco_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtlongitud_arco_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_longitud_arco_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/Radio" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtradio_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_radio_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtradio_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_radio_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/periodo" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtperiodo_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_periodo_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtperiodo_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_periodo_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/frecuencia" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtfrecuencia_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_frecuencia_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtfrecuencia_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_frecuencia_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/aceleracion_centripeta" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtaceleracion_centripeta_mcu"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_aceleracion_centripeta_mcu"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtaceleracion_centripeta_mcu"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_aceleracion_centripeta_mcu"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/bold_button"
+                android:id="@+id/btn_calcular_mcu"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_calcular"
+                android:elevation="4dp"
+                android:text="@string/calcular"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_limpiar_mcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparent"
+                android:contentDescription="@string/CL"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/flecha_big"
+                android:text="Button" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/navegar_mcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15sp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/tiro_vertical"
+                android:src="@drawable/book"
+                app:backgroundTint="@color/white"
+                app:borderWidth="1dp"
+                app:rippleColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

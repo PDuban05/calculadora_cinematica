@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/btn_calcular.xml" value="0.2265" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/floting.xml" value="0.2965" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1955" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1955" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1955" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2265" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/limpiar.xml" value="0.322" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/drawable/side_nav_bar.xml" value="0.2265" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout-land/fragment_caida_libre.xml" value="0.42135416666666664" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout-sw600dp/fragment_caida_libre.xml" value="0.33" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_blank.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_caida_libre.xml" value="0.33" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_caida_libre2.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_c_u.xml" value="0.1" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_c_u_a.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_p_c_l.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_r_u.xml" value="0.33" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_r_u2.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora__m_r_u_a.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_calculadora_tiro_vertical.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_caida_libre.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_mcu.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_mcua.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_mpcl.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_mru.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_mrua.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inf_tiro_vertical.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_inicio.xml" value="0.2941427960666952" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/fragment_slideshow.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/menu/main.xml" value="0.25" />
+        <entry key="..\:/Users/pedro/AndroidStudioProjects/pruebaa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3005" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

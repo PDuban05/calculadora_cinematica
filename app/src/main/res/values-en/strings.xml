@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Fisica</string>
+    <string name="MRU">MRU Calculator</string>
+    <string name="MRUA">MRUA Calculator</string>
+    <string name="cuerpo1_mrua">Rectilinear Uniformly Accelerated Motion or MRUA is motion that occurs along a straight line with constant acceleration. In the MRUA the acceleration is constant, it will never change, it is always the same. Be very careful, the constant is the acceleration, not the speed.</string>
+    <string name="descripcion">Please enter two values, leaving the field you want to find empty:</string>
+    <string name="descripcion2">Please enter the values ​​you have on hand:</string>
+    <string name="Velocidad">Speed:</string>
+    <string name="Velocidad_inicial">Initial velocity:</string>
+    <string name="Velocidad_final">Final velocity:</string>
+    <string name="Velocidad_inicial_x">Initial speed in x:</string>
+    <string name="Velocidad_inicial_y">Initial velocity in y</string>
+    <string name="rapidez_angular">Angular velocity:</string>
+    <string name="rapidez_angular_inicial">Initial angular velocity:</string>
+    <string name="rapidez_angular_final">Final angular velocity:</string>
+    <string name="rapidez_tangencial">Tangential velocity:</string>
+    <string name="rapidez_tangencial_inicial">Initial tangential velocity:</string>
+    <string name="rapidez_tangencial_final">Final tangential velocity</string>
+    <string name="Longitud_arco">Arc length:</string>
+    <string name="Radio">Radius:</string>
+    <string name="periodo">Period:</string>
+    <string name="frecuencia">Frequency:</string>
+    <string name="aceleración">Acceleration:</string>
+    <string name="aceleracion_angular">Angular acceleration:</string>
+    <string name="aceleracion_tangencial">Tangential acceleration:</string>
+    <string name="aceleracion_centripeta">Centripetal acceleration:</string>
+    <string name="distancia">Distance:</string>
+    <string name="desplazamiento_horizontal">Horizontal displacement:</string>
+    <string name="angulo">Angle:</string>
+    <string name="angulo_tiro">Angle:</string>
+    <string name="gravedad">Gravity:</string>
+    <string name="altura">Height:</string>
+    <string name="altura_inicial">Initial height:</string>
+    <string name="altura_maxima">Max. height:</string>
+    <string name="tiempo">Time:</string>
+    <string name="tiempo_total">Total flight time:</string>
+    <string name="calcular">calculate</string>
+    <string name="MPCL">MPCL calculator</string>
+    <string name="cuerpo_mpcl">Parabolic free fall motion, or MPCL, is a motion whose trajectory is a curve called a parabola.         whose trajectory is a curve called parabola, in which the mobile moves only under the influence of gravity once it is released (in vacuum, without air).         the influence of gravity once it is released (in vacuum, without air).</string>
+    <string name="cuerpo2_mpcl">The parabolic free fall motion is a compound motion consisting of 2 simultaneous and independent movements.         movements that are performed at the same time and independently of each other. In the horizontal axis \"x\" a uniform rectilinear motion or MRU         a uniform rectilinear motion or MRU; while on the vertical \"y\" axis a vertical free fall motion or MVCL is developed.</string>
+    <string name="formula_mpcl">Initial velocity formulas</string>
+    <string name="cuerpo3_mpcl">"Where:    \n\nVo : initial velocity.   \nVox : initial velocity on the x-axis (horizontal component).         \n\nVoy : initial velocity on the y-axis (vertical component)."</string>
+    <string name="formulas_mpcl">MPCL formula in the y-axis</string>
+    <string name="formulasadicionales_mpcl">Additional formulas</string>
+    <string name="formuladis_mpcl">Distance formula</string>
+    <string name="cuerpo4_mpcl">Where:    \n\nd :distance traveled on the \"x\" or horizontal axis.   \nt : travel time.</string>
+    <string name="tiro_vertical">Vertical draft calculator</string>
+    <string name="title1_tv">Vertical throw</string>
+    <string name="cuerpo1_tv">The Vertical Ascending Shot is the one in which a body is launched towards the sky. At    the body has a maximum velocity, starting from the hand or machinery that is launching it.       machinery that is launching it.   Subsequently, as it travels through the air, the acceleration of gravity will counteract this movement, slowing it down. counteracting this movement, slowing the object little by little, with a negative acceleration of 9.8 m/s2.                                 of 9.8 m/s2.                                   When it reaches a vertical velocity of 0 m/s, it will be suspended in the air for an instant, to be immediately                                 immediately be affected by the acceleration of gravity, now in a positive sense, experiencing a fall in                                 positive direction, experiencing a Free Fall.</string>
+    <string name="title2_tv">Formulas     Initial velocity:</string>
+    <string name="title3_tv">Time</string>
+    <string name="title4_tv">Maximum height</string>
+    <string name="title5_tv">height</string>
+    <string name="cuerpo5_tv">"It is used to calculate the height at any instant of time.   h = Vo * t + ½ * g * t².    "</string>
+    <string name="title6_tv">"Where: "</string>
+    <string name="cuerpo6_tv">Vf = Final velocity (we can also symbolize it as Vf), in the vertical shot it is zero.      \nVo = Initial velocity. In the vertical pull it cannot be zero (otherwise it would not start).    \nt = time.     \nh = height.</string>
+    <string name="CL">"Free fall calculator                    "</string>
+    <string name="cuerpo1_cl">"The vertical free fall motion or MVCL is a motion in which the mobile describes a vertical trajectory and moves only under the influence of gravity once it is released.         describes a vertical trajectory and moves only under the influence of gravity once it is released.                                   "</string>
+    <string name="title1_CL">" Free fall"</string>
+    <string name="title2_CL">Formulas:</string>
+    <string name="title3_CL">Where:</string>
+    <string name="title1_mcua">MCUA</string>
+    <string name="cuerpo3_cl">" Vf = Final velocity.           \nVo = Initial velocity.           \nt = time.           \ng = acceleration of gravity or gravity (9.8 m/s²).           \nh = height traveled.           \nhn : height traveled in the nth second."</string>
+    <string name="MCUA">MCUA calculator</string>
+    <string name="cuerpo1_mcua">Uniformly accelerated circular motion (UACM) is a circular motion whose angular acceleration α is constant.                                 Therefore, as time progresses, its velocity changes constantly.</string>
+    <string name="title2_mcua">Angular equations:</string>
+    <string name="title3_mcua">"Where:"</string>
+    <string name="title_mcu">Uniform circular motion</string>
+    <string name="cuerpo3_mcua">"ω0 = initial angular velocity (rad/s).  \nωf = final angular velocity (rad/s).   \nα = tangential acceleration (rad/s²).  \nt = time (s).  \nθ = angular displacement (rad)."</string>
+    <string name="title4_mcua">Tangential equations:</string>
+    <string name="cuerpo5_mcua">"\nVf = final tangential speed (m/s).   \nVo = initial tangential velocity (m/s). \nat = tangential acceleration (m/s²).   \nt = time (s).  \nL = arc length (m)"</string>
+    <string name="MCU">mcu calculator</string>
+    <string name="cuerpo1_mcu">Uniform circular motion or UCC is the motion of an object describing a circular path with constant speed.         a circular trajectory with constant speed. The speed of the mobile will never change.</string>
+    <string name="cuerpo2_mcu">"θ = angular displacement (rad). \nω= angular velocity (rad/s).    \nt = time (s).    \nL = arc length (m).   \nV = tangential speed (m/s).    \nR = radius of gyration (m/s).    \nac = centripetal acceleration (m/s²).    \nT = period (s). Refers to the time taken to make one complete revolution.  \nf = frequency (Hz). It is the number of turns per unit time that the body makes."</string>
+    <string name="cuerpo4_tv">" hmax = Vo² / 2 * g    "</string>
+    <string name="cuerpo6_mpcl">"Hmax = ( Vo² * Sen²Θ ) / ( 2 * g )       \nTvuelo = ( 2 * Vo * SenΘ) / ( g )     \nR=( Vo² * sen2Θ ) / ( g )           \n\nWhere:    \nHmax : Altura maxima.   \nTvuelo :Tiempo de vuelo.    \nR : Alcance horizontal.   \nΘ : ángulo del vector velocidad inicial con el eje horizontal x "</string>
+    <string name="cuerpo5_mpcl">Vfy = Voy ± g * t       \nh = Voy * t ± (g * t²) /2    \n h=( Voy + Vfy ) / ( 2 ) * t           \nVfy² = Voy² ± 2 * g * h              \n\nWhere:    \n\nVfy :velocidad final en el eje «y».   \ng : aceleración de la gravedad (g = 9,8 m/s²).</string>
+    <string name="formula3_mpcl">"d = Vox * t   "</string>
+    <string name="formula2_mpcl">"Vox = Vo * CosΘ       |       Voy = Vo * SenΘ   Vo = √( Vox² + Voy² ) "</string>
+    <string name="MPCL2">MPCL</string>
+
+
+
+    <string name="title_mru">MRU</string>
+
+    <string name="cuerpo_mru">Uniform rectilinear motion or MRU is a motion in a straight line with constant velocity.</string>
+
+    <string name="cuerpo2_mru">Distance: meters (m).  \n\nTime: seconds (s). \n\nvelocity: meters per second (m/s).</string>
+</resources>

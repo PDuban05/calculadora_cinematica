@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
+    tools:ignore="UselessParent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo_mpcl"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:src="@drawable/mpcl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo2_mpcl"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:src="@drawable/mpcl2" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="@string/formula_mpcl"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:text="@string/formula2_mpcl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo3_mpcl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="@string/formuladis_mpcl"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:text="@string/formula3_mpcl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo4_mpcl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="@string/formulas_mpcl"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="246dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo5_mpcl"
+
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="@string/formulasadicionales_mpcl"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="431dp"
+                android:layout_height="246dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:text="@string/cuerpo6_mpcl"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

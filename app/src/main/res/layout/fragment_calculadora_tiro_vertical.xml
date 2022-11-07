@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/layaoutbackground"
+            android:elevation="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/gravedad" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/txtgravedad_tv"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignEnd="@id/txtgravedad_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/transparent"
+                        android:src="@drawable/flecha_b"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_gravedad_tv"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtgravedad_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="-2dp"
+                        android:backgroundTint="#376884"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/clear_gravedad_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/tiempo" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txttiempo_tv"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ss2"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignEnd="@id/txttiempo_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/transparent"
+                        android:contentDescription="@string/CL"
+                        android:src="@drawable/flecha_b"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_tiempo_tv"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txttiempo_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="-2dp"
+                        android:backgroundTint="#376884"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_tiempo_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/altura" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtaltura_tv"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+
+                    <ImageButton
+                        android:id="@+id/ss3"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignEnd="@id/txtaltura_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/transparent"
+                        android:contentDescription="@string/CL"
+                        android:src="@drawable/flecha_b"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_altura_tv"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtaltura_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="-2dp"
+                        android:backgroundTint="#376884"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_altura_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/backgroungtext"
+                        android:gravity="center_vertical"
+                        android:text="@string/Velocidad_inicial" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0.2in">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtvelocidad_inicial_tv"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/background_edit_text"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ss4"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignEnd="@id/txtvelocidad_inicial_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/transparent"
+                        android:contentDescription="@string/CL"
+                        android:src="@drawable/flecha_b"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spiner_velocidad_inicial_tv"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/txtvelocidad_inicial_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="-2dp"
+                        android:backgroundTint="#376884"
+                        android:contentDescription="@string/CL"
+                        android:ems="10"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/clear_velocidad_inicial_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="-0.2in"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/transparent"
+                    android:contentDescription="@string/CL"
+                    android:src="@drawable/flecha_a"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/bold_button"
+                android:id="@+id/btn_calcular_tv"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_calcular"
+                android:elevation="4dp"
+                android:text="@string/calcular"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_limpiar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparent"
+                android:contentDescription="@string/CL"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/flecha_big"
+                android:text="Button" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/navegar_tiro_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15sp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/tiro_vertical"
+                android:src="@drawable/book"
+                app:backgroundTint="@color/white"
+                app:borderWidth="1dp"
+                app:rippleColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

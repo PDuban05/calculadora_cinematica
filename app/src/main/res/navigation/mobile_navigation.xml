@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/calculadora_MRU"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
+        android:label="@string/MRU"
+        tools:layout="@layout/fragment_calculadora__m_r_u" />
+    <fragment
+        android:id="@+id/calculadora_MRUA"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_MRUA"
+        android:label="@string/MRUA"
+        tools:layout="@layout/fragment_calculadora__m_r_u_a" />
+    <fragment
+        android:id="@+id/calculadora_MCU"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MCU"
+        android:label="@string/MCU"
+        tools:layout="@layout/fragment_calculadora__m_c_u" />
+    <fragment
+        android:id="@+id/calculadora_MCUA"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_MCUA"
+        android:label="Calculadora de MCUA"
+        tools:layout="@layout/fragment_calculadora__m_c_u_a" />
+    <fragment
+        android:id="@+id/calculadora_tiro_vertical"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_tiro_vertical"
+        android:label="@string/tiro_vertical"
+        tools:layout="@layout/fragment_calculadora_tiro_vertical" />
+    <fragment
+        android:id="@+id/calculadora_MPCL"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_MPCL"
+        android:label="Calculadora MPCL"
+        tools:layout="@layout/fragment_calculadora__m_p_c_l" />
+    <fragment
+        android:id="@+id/inf_mpcl"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mpcl"
+        android:label="@string/MPCL2"
+        tools:layout="@layout/fragment_inf_mpcl" />
+    <fragment
+        android:id="@+id/inf_tiro_vertical"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_tiro_vertical"
+        android:label="@string/title1_tv"
+        tools:layout="@layout/fragment_inf_tiro_vertical" />
+    <fragment
+        android:id="@+id/inf_caida_libre"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_caida_libre"
+        android:label="@string/title1_CL"
+        tools:layout="@layout/fragment_inf_caida_libre" />
+    <fragment
+        android:id="@+id/inf_mcua"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mcua"
+        android:label="@string/title1_mcua"
+        tools:layout="@layout/fragment_inf_mcua" />
+    <fragment
+        android:id="@+id/inf_mcu"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mcu"
+        android:label="@string/title_mcu"
+        tools:layout="@layout/fragment_inf_mcu" />
+    <fragment
+        android:id="@+id/inf_mrua"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mrua"
+        android:label="fragment_inf_mrua"
+        tools:layout="@layout/fragment_inf_mrua" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/caida_libre2"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.caida_libre"
+        android:label="@string/CL"
+        tools:layout="@layout/fragment_caida_libre" />
+    <fragment
+        android:id="@+id/inf_mru"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mru"
+        android:label="@string/title_mru"
+        tools:layout="@layout/fragment_inf_mru" />
+</navigation>
