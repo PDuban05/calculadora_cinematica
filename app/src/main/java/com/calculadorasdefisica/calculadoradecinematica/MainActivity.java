@@ -3,6 +3,7 @@ package com.calculadorasdefisica.calculadoradecinematica;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 
@@ -23,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     private  Context globalContext = null;
-
-
+    private MenuItem item;
 
 
     @Override
@@ -51,12 +51,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
-
-
-
-
-
-
     }
 
 
@@ -74,5 +68,12 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+
+
+
     }
+
+
+
+
 }

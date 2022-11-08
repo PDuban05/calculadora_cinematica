@@ -25,6 +25,7 @@ import android.widget.TextView;
 import com.example.pruebaa.R;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 
 
 public class caida_libre extends Fragment {
@@ -58,8 +59,11 @@ public class caida_libre extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_caida_libre, container, false);
+
 
 
 
@@ -73,9 +77,7 @@ public class caida_libre extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-
-
+        
 
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_cl);
