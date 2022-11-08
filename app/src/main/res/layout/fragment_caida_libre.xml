@@ -16,20 +16,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="2dp"
-            android:orientation="vertical"
             android:background="@drawable/layaoutbackground"
-            android:elevation="20dp"
-            >
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_margin="5dp"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -40,10 +37,10 @@
                         android:layout_width="109dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
                         android:background="@drawable/textbaground2"
                         android:gravity="center_vertical"
-                        android:paddingStart="10dp"
-                        android:layout_marginBottom="2dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         style="@style/text"
@@ -52,9 +49,9 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
                         android:background="@drawable/backgroungtext"
                         android:gravity="center_vertical"
+                        android:paddingStart="10dp"
                         android:text="@string/gravedad" />
 
                 </RelativeLayout>
@@ -62,32 +59,14 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginEnd="0.2in"
-                    >
+                    android:layout_marginEnd="0.2in">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
+                        android:layout_weight="1"
                         android:background="@drawable/edit_text_background2"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="center_vertical"
-                        android:inputType="numberDecimal"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
-
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/txtgravedad_cl"
-                        style="@style/edittext"
-                        android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
@@ -95,30 +74,32 @@
                         android:paddingEnd="112dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-                    <ImageButton
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtgravedad_cl"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/txtgravedad_cl"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="80dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatSpinner
                         android:id="@+id/spiner_gravedad_cl"
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtgravedad_cl"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
-
-
 
 
                 </RelativeLayout>
@@ -153,10 +134,10 @@
                         android:layout_width="109dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
                         android:background="@drawable/textbaground2"
                         android:gravity="center_vertical"
-                        android:paddingStart="10dp"
-                        android:layout_marginBottom="2dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         style="@style/text"
@@ -165,9 +146,9 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
                         android:background="@drawable/backgroungtext"
                         android:gravity="center_vertical"
+                        android:paddingStart="10dp"
                         android:text="@string/tiempo" />
 
                 </RelativeLayout>
@@ -181,44 +162,30 @@
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/edit_text_background2"
                         android:layout_weight="1"
+                        android:background="@drawable/edit_text_background2"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
                         android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/txttiempo_cl"
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
-
-                    <ImageButton
-                        android:id="@+id/ss2"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txttiempo_cl"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:paddingEnd="80dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -226,9 +193,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txttiempo_cl"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -248,8 +214,6 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
 
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -267,10 +231,10 @@
                         android:layout_width="109dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
                         android:background="@drawable/textbaground2"
                         android:gravity="center_vertical"
-                        android:paddingStart="10dp"
-                        android:layout_marginBottom="2dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         style="@style/text"
@@ -279,9 +243,9 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
                         android:background="@drawable/backgroungtext"
                         android:gravity="center_vertical"
+                        android:paddingStart="10dp"
                         android:text="@string/altura" />
 
                 </RelativeLayout>
@@ -295,45 +259,30 @@
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/edit_text_background2"
                         android:layout_weight="1"
+                        android:background="@drawable/edit_text_background2"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
                         android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/txtaltura_cl"
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
-
-
-                    <ImageButton
-                        android:id="@+id/ss3"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtaltura_cl"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:paddingEnd="80dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -341,9 +290,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtaltura_cl"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -379,10 +327,10 @@
                         android:layout_width="109dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
                         android:background="@drawable/textbaground2"
                         android:gravity="center_vertical"
-                        android:paddingStart="10dp"
-                        android:layout_marginBottom="2dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         style="@style/text"
@@ -391,9 +339,9 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
                         android:background="@drawable/backgroungtext"
                         android:gravity="center_vertical"
+                        android:paddingStart="10dp"
                         android:text="@string/Velocidad_inicial" />
 
                 </RelativeLayout>
@@ -407,44 +355,30 @@
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/edit_text_background2"
                         android:layout_weight="1"
+                        android:background="@drawable/edit_text_background2"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
                         android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/txtvelocidad_inicial_cl"
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
-
-                    <ImageButton
-                        android:id="@+id/ss4"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtvelocidad_inicial_cl"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:paddingEnd="80dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -452,9 +386,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtvelocidad_inicial_cl"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -490,10 +423,10 @@
                         android:layout_width="109dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
                         android:background="@drawable/textbaground2"
                         android:gravity="center_vertical"
-                        android:paddingStart="10dp"
-                        android:layout_marginBottom="2dp" />
+                        android:paddingStart="10dp" />
 
                     <TextView
                         style="@style/text"
@@ -502,9 +435,9 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
                         android:background="@drawable/backgroungtext"
                         android:gravity="center_vertical"
+                        android:paddingStart="10dp"
                         android:text="@string/Velocidad_final" />
 
                 </RelativeLayout>
@@ -518,15 +451,14 @@
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/edit_text_background2"
                         android:layout_weight="1"
+                        android:background="@drawable/edit_text_background2"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
                         android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <EditText
@@ -534,29 +466,16 @@
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
-
-                    <ImageButton
-                        android:id="@+id/ss5"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtvelocidad_final_cl"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:paddingEnd="80dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -564,9 +483,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtvelocidad_final_cl"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -588,8 +506,8 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/bold_button"
                 android:id="@+id/btn_calcular_cl"
+                style="@style/bold_button"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

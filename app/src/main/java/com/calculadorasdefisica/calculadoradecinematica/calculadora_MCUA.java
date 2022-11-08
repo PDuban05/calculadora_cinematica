@@ -57,63 +57,63 @@ public class calculadora_MCUA extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         spinner_angulo = view.findViewById(R.id.spiner_angulo_mcua);
-        String[] medidas = {"rad","º"};
+        String[] medidas = {"rad  ","º  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_angulo.setAdapter(adapter);
 
         spinner_velocidad_angular_inicial = view.findViewById(R.id.spiner_rapidez_angular_inicial_mcua);
-        String[] medidas2 = {"rad/s","º/s"};
+        String[] medidas2 = {"rad/s  ","º/s  "};
         ArrayAdapter<String> adapter2  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_angular_inicial.setAdapter(adapter2);
 
 
         spinner_velocidad_angular_final = view.findViewById(R.id.spiner_rapidez_angular_final_mcua);
-        String[] medidas3 = {"rad/s","º/s"};
+        String[] medidas3 = {"rad/s  ","º/s  "};
         ArrayAdapter<String> adapter3  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas3);
         adapter3.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_angular_final.setAdapter(adapter3);
 
         spinner_aceleracion_angular = view.findViewById(R.id.spiner_aceleracion_angular_mcua);
-        String[] medidas4 = {"rad/s²","º/s²"};
+        String[] medidas4 = {"rad/s²  ","º/s²  "};
         ArrayAdapter<String> adapter4  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas4);
         adapter4.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_aceleracion_angular.setAdapter(adapter4);
 
         spinner_tiempo = view.findViewById(R.id.spiner_tiempo_mcua);
-        String[] medidas5 = {"s","h"};
+        String[] medidas5 = {"s  ","h  "};
         ArrayAdapter<String> adapter5  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas5);
         adapter5.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo.setAdapter(adapter5);
 
         spinner_radio = view.findViewById(R.id.spiner_radio_mcua);
-        String[] medidas6 = {"m","km"};
+        String[] medidas6 = {"m  ","km  "};
         ArrayAdapter<String> adapter6  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas6);
         adapter6.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_radio.setAdapter(adapter6);
 
         spinner_longitud_arco = view.findViewById(R.id.spiner_longitud_arco_mcua);
-        String[] medidas7 = {"m","km"};
+        String[] medidas7 = {"m  ","km  "};
         ArrayAdapter<String> adapter7  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas7);
         adapter7.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_longitud_arco.setAdapter(adapter7);
 
         spinner_velocidad_tangencial_inicial = view.findViewById(R.id.spiner_rapidez_tangencial_inicial_mcua);
-        String[] medidas8 = {"m/s","km/h"};
+        String[] medidas8 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter8 =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas8);
         adapter8.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_tangencial_inicial.setAdapter(adapter8);
 
         spinner_velocidad_tangencial_final = view.findViewById(R.id.spiner_rapidez_tangencial_final_mcua);
-        String[] medidas9 = {"m/s","km/h"};
+        String[] medidas9 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter9 =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas9);
         adapter9.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_tangencial_final.setAdapter(adapter9);
 
 
         spinner_aceleracion_tangencial = view.findViewById(R.id.spiner_aceleracion_tangencial_mcua);
-        String[] medidas10 = {"m/s²","km/s²"};
+        String[] medidas10 = {"m/s²  ","km/s²  "};
         ArrayAdapter<String> adapter10  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas10);
         adapter10.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_aceleracion_tangencial.setAdapter(adapter10);
@@ -151,7 +151,7 @@ public class calculadora_MCUA extends Fragment {
             aceleracion_tangenci = aceleracion_tangencial.getText().toString();
 
             String seleccion = spinner_angulo.getSelectedItem().toString();
-            if(seleccion.equals("º")&& !angle.isEmpty() ){
+            if(seleccion.equals("º  ")&& !angle.isEmpty() ){
                 double angulo2, conversion;
                 angulo2 = parseDouble(angle);
                 conversion = Math.toRadians(angulo2);
@@ -159,7 +159,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion2 = spinner_velocidad_angular_inicial.getSelectedItem().toString();
-            if(seleccion2.equals("º/s") && !rapidez_angular_ini.isEmpty()){
+            if(seleccion2.equals("º/s  ") && !rapidez_angular_ini.isEmpty()){
                 double velocidad_angular_inicial2, conversion2;
                 velocidad_angular_inicial2 = parseDouble(rapidez_angular_ini);
                 conversion2 = Math.toRadians(velocidad_angular_inicial2);
@@ -167,7 +167,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion3 = spinner_velocidad_angular_final.getSelectedItem().toString();
-            if(seleccion3.equals("º/s") && !rapidez_angular_fin.isEmpty()){
+            if(seleccion3.equals("º/s  ") && !rapidez_angular_fin.isEmpty()){
                 double velocidad_angular_final2, conversion3;
                 velocidad_angular_final2 = parseDouble(rapidez_angular_fin);
                 conversion3 = Math.toRadians(velocidad_angular_final2);
@@ -175,7 +175,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion4 = spinner_aceleracion_angular.getSelectedItem().toString();
-            if(seleccion4.equals("º/s²") && !aceleracion_angle.isEmpty()){
+            if(seleccion4.equals("º/s²  ") && !aceleracion_angle.isEmpty()){
                 double aceleracion_angular2, conversion4;
                 aceleracion_angular2 = parseDouble(aceleracion_angle);
                 conversion4 = Math.toRadians(aceleracion_angular2);
@@ -183,7 +183,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion5 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion5.equals("h") && !time.isEmpty()){
+            if(seleccion5.equals("h  ") && !time.isEmpty()){
                 double tiempo2, conversion5;
                 tiempo2 = parseDouble(time);
                 conversion5 = tiempo2 * 3600;
@@ -191,7 +191,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion6 = spinner_radio.getSelectedItem().toString();
-            if(seleccion6.equals("km") && !radi.isEmpty()){
+            if(seleccion6.equals("km  ") && !radi.isEmpty()){
                 double radio2, conversion6;
                 radio2 = parseDouble(radi);
                 conversion6 = radio2 * 1000;
@@ -200,7 +200,7 @@ public class calculadora_MCUA extends Fragment {
 
 
             String seleccion7 = spinner_longitud_arco.getSelectedItem().toString();
-            if(seleccion7.equals("km")&& !longitud_arc.isEmpty()){
+            if(seleccion7.equals("km  ")&& !longitud_arc.isEmpty()){
                 double longitud_arco2, conversion7;
                 longitud_arco2 = parseDouble(longitud_arc);
                 conversion7 = longitud_arco2 * 1000;
@@ -209,7 +209,7 @@ public class calculadora_MCUA extends Fragment {
 
 
             String seleccion8 = spinner_velocidad_tangencial_inicial.getSelectedItem().toString();
-            if(seleccion8.equals("km/h") && !rapidez_angular_ini.isEmpty()){
+            if(seleccion8.equals("km/h  ") && !rapidez_angular_ini.isEmpty()){
                 double velocidad_tangencial_inicial2, conversion8;
                 velocidad_tangencial_inicial2 = parseDouble(rapidez_tangencial_ini);
                 conversion8 = velocidad_tangencial_inicial2 / 3.6;
@@ -217,7 +217,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion9 = spinner_velocidad_tangencial_final.getSelectedItem().toString();
-            if(seleccion9.equals("km/h") && !rapidez_angular_fin.isEmpty()){
+            if(seleccion9.equals("km/h  ") && !rapidez_angular_fin.isEmpty()){
                 double velocidad_tangencial_final2, conversion9;
                 velocidad_tangencial_final2 = parseDouble(rapidez_tangencial_fin);
                 conversion9 = velocidad_tangencial_final2 / 3.6;
@@ -225,7 +225,7 @@ public class calculadora_MCUA extends Fragment {
             }
 
             String seleccion10 = spinner_aceleracion_tangencial.getSelectedItem().toString();
-            if(seleccion10.equals("km/h²")&& !aceleracion_tangenci.isEmpty()){
+            if(seleccion10.equals("km/h²  ")&& !aceleracion_tangenci.isEmpty()){
                 double aceleracion_tangencial2, conversion10;
                 aceleracion_tangencial2 = parseDouble(aceleracion_tangenci);
                 conversion10 = (aceleracion_tangencial2 * 1000) / 12960000;

@@ -70,31 +70,31 @@ public class caida_libre extends Fragment {
 
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_cl);
-        String[] medidas5 = {"m/s²"};
+        String[] medidas5 = {"m/s²  "};
         ArrayAdapter<String> adapter5  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas5);
         adapter5.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_gravedad.setAdapter(adapter5);
 
         spinner_altura = view.findViewById(R.id.spiner_altura_cl);
-        String[] medidas = {"m","km"};
+        String[] medidas = {"m  ","km  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_altura.setAdapter(adapter);
 
         spinner_velocidad_inicial = view.findViewById(R.id.spiner_velocidad_inicial_cl);
-        String[] medidas2 = {"m/s","km/h"};
+        String[] medidas2 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter2  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial.setAdapter(adapter2);
 
         spinner_velocidad_final = view.findViewById(R.id.spiner_velocidad_final_cl);
-        String[] medidas3 = {"m/s","km/h"};
+        String[] medidas3 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter3  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas3);
         adapter3.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_final.setAdapter(adapter3);
 
         spinner_tiempo = view.findViewById(R.id.spiner_tiempo_cl);
-        String[] medidas4 = {"s","h"};
+        String[] medidas4 = {"s  ","h  "};
         ArrayAdapter<String> adapter4  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas4);
         adapter4.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo.setAdapter(adapter4);
@@ -126,7 +126,7 @@ public class caida_libre extends Fragment {
 
 
             String seleccion = spinner_altura.getSelectedItem().toString();
-            if(seleccion.equals("km")&&!altur.isEmpty()){
+            if(seleccion.equals("km  ")&&!altur.isEmpty()){
                 double altura2, conversion;
                 altura2 = parseDouble(altur);
                 conversion = altura2  * 1000;
@@ -134,7 +134,7 @@ public class caida_libre extends Fragment {
             }
 
             String seleccion4 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion4.equals("h")&& !tempo.isEmpty()){
+            if(seleccion4.equals("h  ")&& !tempo.isEmpty()){
                 double tiempo2, conversion4;
                 tiempo2 = parseDouble(tempo);
                 conversion4 = tiempo2 * 3600;
@@ -142,7 +142,7 @@ public class caida_libre extends Fragment {
             }
 
             String seleccion2 = spinner_velocidad_inicial.getSelectedItem().toString();
-            if(seleccion2.equals("km/h")&& !velo_inicial.isEmpty()){
+            if(seleccion2.equals("km/h  ")&& !velo_inicial.isEmpty()){
                 double velocidad_inicial2, conversion2;
                 velocidad_inicial2 = parseDouble(velo_inicial);
                 conversion2 = velocidad_inicial2 / 3.6;
@@ -150,7 +150,7 @@ public class caida_libre extends Fragment {
             }
 
             String seleccion3 = spinner_velocidad_final.getSelectedItem().toString();
-            if(seleccion3.equals("km/h") && !velo_final.isEmpty()){
+            if(seleccion3.equals("km/h  ") && !velo_final.isEmpty()){
                 double velocidad_final2, conversion3;
                 velocidad_final2 = parseDouble(velo_final);
                 conversion3 = velocidad_final2 / 3.6;

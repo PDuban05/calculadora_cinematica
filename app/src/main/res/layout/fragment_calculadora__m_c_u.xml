@@ -17,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:layout_margin="2dp"
             android:orientation="vertical"
             android:background="@drawable/layaoutbackground"
             android:elevation="20dp"
@@ -92,7 +91,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -119,7 +118,7 @@
                     android:contentDescription="@string/CL"
                     android:src="@drawable/flecha_a"
                     tools:ignore="TouchTargetSizeCheck"
-                    android:elevation="4dp"/>
+                    />
 
 
             </LinearLayout>
@@ -190,7 +189,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -219,7 +218,7 @@
                     android:contentDescription="@string/CL"
                     android:src="@drawable/flecha_a"
                     tools:ignore="TouchTargetSizeCheck"
-                    android:elevation="4dp"/>
+                    />
 
 
 
@@ -292,7 +291,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -390,7 +389,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -489,7 +488,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -687,7 +686,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -786,7 +785,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 
@@ -885,7 +884,7 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
 

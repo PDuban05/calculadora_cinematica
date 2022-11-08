@@ -9,7 +9,9 @@
         android:id="@+id/calculadora_MRU"
         android:name="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
         android:label="@string/MRU"
-        tools:layout="@layout/fragment_calculadora__m_r_u" />
+        tools:layout="@layout/fragment_calculadora__m_r_u"
+
+        />
     <fragment
         android:id="@+id/calculadora_MRUA"
         android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_MRUA"

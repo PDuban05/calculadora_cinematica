@@ -59,62 +59,62 @@ public class calculadora_MPCL extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_mcpl);
-        String[] medidas5 = {"m/s²"};
+        String[] medidas5 = {"m/s²  "};
         ArrayAdapter<String> adapter5  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas5);
         adapter5.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_gravedad.setAdapter(adapter5);
 
         spinner_angulo = view.findViewById(R.id.spiner_angulo_tiro_mcpl);
-        String[] medidas = {"rad","º"};
+        String[] medidas = {"rad  ","º  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_angulo.setAdapter(adapter);
 
         spinner_velocidad_inicial = view.findViewById(R.id.spiner_velocidad_inicial_mcpl);
-        String[] medidas2 = {"m/s","km/h"};
+        String[] medidas2 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter2  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial.setAdapter(adapter2);
 
         spinner_velocidad_inicial_x = view.findViewById(R.id.spiner_velocidad_inicial_x_mcpl);
-        String[] medidas3 = {"m/s","km/h"};
+        String[] medidas3 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter3  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas3);
         adapter3.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial_x.setAdapter(adapter3);
 
         spinner_velocidad_inicial_y = view.findViewById(R.id.spiner_velocidad_inicial_y_mpcl);
-        String[] medidas4 = {"m/s","km/h"};
+        String[] medidas4 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter4  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas4);
         adapter4.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial_y.setAdapter(adapter4);
 
         spinner_tiempo = view.findViewById(R.id.spiner_tiempo_mpcl);
-        String[] medidas6 = {"s","h"};
+        String[] medidas6 = {"s  ","h  "};
         ArrayAdapter<String> adapter6  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas6);
         adapter6.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo.setAdapter(adapter6);
 
 
         spinner_tiempo_vuelo = view.findViewById(R.id.spiner_tiempo_vuelo_mcpl);
-        String[] medidas7 = {"s","h"};
+        String[] medidas7 = {"s  ","h  "};
         ArrayAdapter<String> adapter7  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas7);
         adapter7.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo_vuelo.setAdapter(adapter7);
 
         spinner_altura_inicial = view.findViewById(R.id.spiner_altura_inicia_mpcl);
-        String[] medidas8 = {"m","km"};
+        String[] medidas8 = {"m  ","km  "};
         ArrayAdapter<String> adapter8  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas8);
         adapter8.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_altura_inicial.setAdapter(adapter8);
 
         spinner_altura_maxima = view.findViewById(R.id.spiner_altura_maxima_mpcl);
-        String[] medidas9 = {"m","km"};
+        String[] medidas9 = {"m  ","km  "};
         ArrayAdapter<String> adapter9  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas9);
         adapter9.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_altura_maxima.setAdapter(adapter9);
 
         spinner_desplazamiento_horizontal = view.findViewById(R.id.spiner_desplzamiento_horizontal_mcpl);
-        String[] medidas10= {"m","km"};
+        String[] medidas10= {"m  ","km  "};
         ArrayAdapter<String> adapter10  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas10);
         adapter10.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_desplazamiento_horizontal.setAdapter(adapter10);
@@ -156,7 +156,7 @@ public class calculadora_MPCL extends Fragment {
 
 
             String seleccion = spinner_angulo.getSelectedItem().toString();
-            if(seleccion.equals("º")&& !angulo_tiro1.isEmpty()){
+            if(seleccion.equals("º  ")&& !angulo_tiro1.isEmpty()){
                 double angulo2, conversion;
                 angulo2 = parseDouble(angulo_tiro1);
                 conversion = Math.toRadians(angulo2);
@@ -165,7 +165,7 @@ public class calculadora_MPCL extends Fragment {
 
 
             String seleccion2 = spinner_velocidad_inicial.getSelectedItem().toString();
-            if(seleccion2.equals("km/h")&& !velocidad_inicial_1.isEmpty() ){
+            if(seleccion2.equals("km/h  ")&& !velocidad_inicial_1.isEmpty() ){
                 double velocidad_inicial2, conversion2;
                 velocidad_inicial2 = parseDouble(velocidad_inicial_1);
                 conversion2 = velocidad_inicial2 / 3.6;
@@ -173,7 +173,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion3 = spinner_velocidad_inicial_x.getSelectedItem().toString();
-            if(seleccion3.equals("km/h") && !velocidad_inicial_x1.isEmpty()){
+            if(seleccion3.equals("km/h  ") && !velocidad_inicial_x1.isEmpty()){
                 double velocidad_inicial_x2, conversion2;
                 velocidad_inicial_x2 = parseDouble(velocidad_inicial_x1);
                 conversion2 = velocidad_inicial_x2 / 3.6;
@@ -181,7 +181,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion4 = spinner_velocidad_inicial_y.getSelectedItem().toString();
-            if(seleccion4.equals("km/h") && !velocidad_inicial_y1.isEmpty()){
+            if(seleccion4.equals("km/h  ") && !velocidad_inicial_y1.isEmpty()){
                 double velocidad_inicial2, conversion2;
                 velocidad_inicial2 = parseDouble(velocidad_inicial_y1);
                 conversion2 = velocidad_inicial2 / 3.6;
@@ -189,7 +189,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion5 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion5.equals("h")&& !tiempo1.isEmpty()){
+            if(seleccion5.equals("h  ")&& !tiempo1.isEmpty()){
                 double tiempo2, conversion4;
                 tiempo2 = parseDouble(tiempo1);
                 conversion4 = tiempo2 * 3600;
@@ -197,7 +197,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion6 = spinner_tiempo_vuelo.getSelectedItem().toString();
-            if(seleccion6.equals("h") && !tiempo_vuelo1.isEmpty()){
+            if(seleccion6.equals("h  ") && !tiempo_vuelo1.isEmpty()){
                 double tiempo2, conversion4;
                 tiempo2 = parseDouble(tiempo_vuelo1);
                 conversion4 = tiempo2 * 3600;
@@ -205,7 +205,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion7 = spinner_altura_inicial.getSelectedItem().toString();
-            if(seleccion7.equals("km") && !altura_inicial1.isEmpty()){
+            if(seleccion7.equals("km  ") && !altura_inicial1.isEmpty()){
                 double altura2, conversion;
                 altura2 = parseDouble(altura_inicial1);
                 conversion = altura2  * 1000;
@@ -213,7 +213,7 @@ public class calculadora_MPCL extends Fragment {
             }
 
             String seleccion8 = spinner_altura_maxima.getSelectedItem().toString();
-            if(seleccion8.equals("km") && !altura_maxima1.isEmpty()){
+            if(seleccion8.equals("km  ") && !altura_maxima1.isEmpty()){
                 double altura2, conversion;
                 altura2 = parseDouble(altura_maxima1);
                 conversion = altura2  * 1000;
@@ -222,7 +222,7 @@ public class calculadora_MPCL extends Fragment {
 
 
             String seleccion9 = spinner_desplazamiento_horizontal.getSelectedItem().toString();
-            if(seleccion9.equals("km") && !desplazamiento_horizontal1.isEmpty()){
+            if(seleccion9.equals("km  ") && !desplazamiento_horizontal1.isEmpty()){
                 double desplazamiento_horizontal_2, conversion;
                 desplazamiento_horizontal_2 = parseDouble(desplazamiento_horizontal1);
                 conversion = desplazamiento_horizontal_2  * 1000;

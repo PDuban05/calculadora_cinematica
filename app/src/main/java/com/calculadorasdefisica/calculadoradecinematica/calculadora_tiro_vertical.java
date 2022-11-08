@@ -55,26 +55,26 @@ public class calculadora_tiro_vertical extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_tv);
-        String[] medidas5 = {"m/s²"};
+        String[] medidas5 = {"m/s²  "};
         ArrayAdapter<String> adapter5  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas5);
         adapter5.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_gravedad.setAdapter(adapter5);
 
         spinner_altura = view.findViewById(R.id.spiner_altura_tv);
-        String[] medidas = {"m","km"};
+        String[] medidas = {"m  ","km  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_altura.setAdapter(adapter);
 
         spinner_velocidad_inicial = view.findViewById(R.id.spiner_velocidad_inicial_tv);
-        String[] medidas2 = {"m/s","km/h"};
+        String[] medidas2 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter2  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial.setAdapter(adapter2);
 
 
         spinner_tiempo = view.findViewById(R.id.spiner_tiempo_tv);
-        String[] medidas4 = {"s","h"};
+        String[] medidas4 = {"s  ","h  "};
         ArrayAdapter<String> adapter4  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas4);
         adapter4.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo.setAdapter(adapter4);
@@ -98,7 +98,7 @@ public class calculadora_tiro_vertical extends Fragment {
 
 
             String seleccion = spinner_altura.getSelectedItem().toString();
-            if(seleccion.equals("km")&& !altura1.isEmpty()){
+            if(seleccion.equals("km  ")&& !altura1.isEmpty()){
                 double altura2, conversion;
                 altura2 = parseDouble(altura1);
                 conversion = altura2  * 1000;
@@ -106,7 +106,7 @@ public class calculadora_tiro_vertical extends Fragment {
             }
 
             String seleccion4 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion4.equals("h")&& !tiempo1.isEmpty()){
+            if(seleccion4.equals("h  ")&& !tiempo1.isEmpty()){
                 double tiempo2, conversion4;
                 tiempo2 = parseDouble(tiempo1);
                 conversion4 = tiempo2 * 3600;
@@ -114,7 +114,7 @@ public class calculadora_tiro_vertical extends Fragment {
             }
 
             String seleccion2 = spinner_velocidad_inicial.getSelectedItem().toString();
-            if(seleccion2.equals("km/h") && !velocidad_inicial1.isEmpty()){
+            if(seleccion2.equals("km/h  ") && !velocidad_inicial1.isEmpty()){
                 double velocidad_inicial2, conversion2;
                 velocidad_inicial2 = parseDouble(velocidad_inicial1);
                 conversion2 = velocidad_inicial2 / 3.6;

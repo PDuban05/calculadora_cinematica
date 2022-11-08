@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:layout_margin="2dp"
+
             android:orientation="vertical"
             android:background="@drawable/layaoutbackground"
             android:elevation="20dp"
@@ -92,29 +92,16 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-                    <ImageButton
-                        android:id="@+id/ss"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtangulo_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatSpinner
                         android:id="@+id/spiner_angulo_mcua"
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtangulo_mcua"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -202,21 +189,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtrapidez_angular_inicial_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -224,9 +199,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtrapidez_angular_inicial_mcua"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -316,22 +290,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-
-                    <ImageButton
-                        android:id="@+id/ss3"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtrapidez_angular_final_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -339,9 +300,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtrapidez_angular_final_mcua"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -428,21 +388,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-                        android:id="@+id/ss4"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtaceleracion_angular_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -450,9 +398,9 @@
                         android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtaceleracion_angular_mcua"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -540,21 +488,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txttiempo_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -562,9 +498,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txttiempo_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -652,20 +587,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtradio_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -673,9 +597,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtradio_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -763,20 +686,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtlongitud_arco_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -784,9 +696,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtlongitud_arco_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -874,20 +785,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtrapidez_tangencial_inicial_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -895,9 +795,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtrapidez_tangencial_inicial_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -985,21 +884,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtrapidez_tangencial_final_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -1007,9 +894,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtrapidez_tangencial_final_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -1097,20 +983,9 @@
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
-                        android:paddingEnd="112dp"
+                        android:paddingEnd="80dp"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                         />
-
-                    <ImageButton
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_alignEnd="@id/txtaceleracion_tangencial_mcua"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/transparent"
-                        android:contentDescription="@string/CL"
-                        android:src="@drawable/flecha_b"
-                        tools:ignore="TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -1118,9 +993,8 @@
                         android:layout_width="112dp"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@id/txtaceleracion_tangencial_mcua"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginEnd="-2dp"
-                        android:backgroundTint="#376884"
+                        android:layout_marginEnd="-33dp"
+                        android:backgroundTint="@android:color/transparent"
                         android:contentDescription="@string/CL"
                         android:ems="10"
                         tools:ignore="TouchTargetSizeCheck" />

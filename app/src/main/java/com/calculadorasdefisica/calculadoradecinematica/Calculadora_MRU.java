@@ -59,19 +59,19 @@ public class Calculadora_MRU extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         spinner1 = view.findViewById(R.id.spiner_distancia_mru);
-        String[] medidas = {"m","km"};
+        String[] medidas = {"m  ","km  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner1.setAdapter(adapter);
 
         spinner2 = view.findViewById(R.id.spiner_tiempo_mru);
-        String[] medidas2 = {"s","h"};
+        String[] medidas2 = {"s  ","h  "};
         ArrayAdapter<String> adapter2  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner2.setAdapter(adapter2);
 
         spinner3 = view.findViewById(R.id.spiner_velocidad_mru);
-        String[] medidas3 = {"m/s","km/h"};
+        String[] medidas3 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter3  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas3);
         adapter3.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner3.setAdapter(adapter3);
@@ -106,7 +106,7 @@ public class Calculadora_MRU extends Fragment {
 
 
                 String seleccion = spinner1.getSelectedItem().toString();
-                if(seleccion.equals("km")&& !distanc.isEmpty()){
+                if(seleccion.equals("km  ")&& !distanc.isEmpty()){
                     double distancia2, conversion;
                     distancia2 = parseDouble(distanc);
                     conversion = distancia2 * 1000;
@@ -115,7 +115,7 @@ public class Calculadora_MRU extends Fragment {
 
 
                 String seleccion2 = spinner2.getSelectedItem().toString();
-                if(seleccion2.equals("h") && !time.isEmpty()){
+                if(seleccion2.equals("h  ") && !time.isEmpty()){
                     double tiempo2, conversion2;
                     tiempo2 = parseDouble(time);
                     conversion2 = tiempo2 * 3600;
@@ -123,7 +123,7 @@ public class Calculadora_MRU extends Fragment {
                 }
 
                 String seleccion3 = spinner3.getSelectedItem().toString();
-                if(seleccion3.equals("k/h")&& !velo.isEmpty()){
+                if(seleccion3.equals("k/h  ")&& !velo.isEmpty()){
                     double velocidad2, conversion3;
                     velocidad2 = parseDouble(velo);
                     conversion3 = velocidad2 / 3.6;

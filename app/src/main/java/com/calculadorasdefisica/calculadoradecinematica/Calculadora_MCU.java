@@ -160,7 +160,7 @@ public class Calculadora_MCU extends Fragment {
 
 
             String seleccion = spinner_angulo.getSelectedItem().toString();
-            if(seleccion.equals("º") && !angulo.isEmpty()){
+            if(seleccion.equals("º  ") && !angulo.isEmpty()){
                 double angulo2, conversion;
                 angulo2 = parseDouble(angulo);
                 conversion = Math.toRadians(angulo2);
@@ -168,7 +168,7 @@ public class Calculadora_MCU extends Fragment {
             }
 
             String seleccion2 = spinner_velocidad_angular.getSelectedItem().toString();
-            if(seleccion2.equals("º/s") && !rapidez_angular.isEmpty()){
+            if(seleccion2.equals("º/s  ") && !rapidez_angular.isEmpty()){
                 double velocidad_angular2, conversion2;
                 velocidad_angular2 = parseDouble(rapidez_angular);
                 conversion2 = Math.toRadians(velocidad_angular2);
@@ -176,7 +176,7 @@ public class Calculadora_MCU extends Fragment {
             }
 
             String seleccion3 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion3.equals("h") && !tiempo.isEmpty()){
+            if(seleccion3.equals("h  ") && !tiempo.isEmpty()){
                 double tiempo2, conversion3;
                 tiempo2 = parseDouble(tiempo);
                 conversion3 = tiempo2 * 3600;
@@ -184,7 +184,7 @@ public class Calculadora_MCU extends Fragment {
             }
 
             String seleccion4 = spinner_velocidad_tangencial.getSelectedItem().toString();
-            if(seleccion4.equals("km/h") && !rapidez_tangencial.isEmpty()){
+            if(seleccion4.equals("km/h  ") && !rapidez_tangencial.isEmpty()){
                 double velocidad_tangencial2, conversion4;
                 velocidad_tangencial2 = parseDouble(rapidez_tangencial);
                 conversion4 = velocidad_tangencial2 / 3.6;
@@ -193,7 +193,7 @@ public class Calculadora_MCU extends Fragment {
 
 
             String seleccion5 = spinner_longitud_arco.getSelectedItem().toString();
-            if(seleccion5.equals("km")&& !longitud_arco.isEmpty()){
+            if(seleccion5.equals("km  ")&& !longitud_arco.isEmpty()){
                 double longitud_arco2, conversion5;
                 longitud_arco2 = parseDouble(longitud_arco);
                 conversion5 = longitud_arco2 * 1000;
@@ -201,7 +201,7 @@ public class Calculadora_MCU extends Fragment {
             }
 
             String seleccion6 = spinner_radio.getSelectedItem().toString();
-            if(seleccion6.equals("km")&& !radio.isEmpty()){
+            if(seleccion6.equals("km  ")&& !radio.isEmpty()){
                 double radio2, conversion6;
                 radio2 = parseDouble(radio);
                 conversion6 = radio2 * 1000;
@@ -209,7 +209,7 @@ public class Calculadora_MCU extends Fragment {
             }
 
             String seleccion7 = spinner_periodo.getSelectedItem().toString();
-            if(seleccion7.equals("h")&& !periodo.isEmpty()){
+            if(seleccion7.equals("h  ")&& !periodo.isEmpty()){
                 double periodo2, conversion7;
                 periodo2 = parseDouble(periodo);
                 conversion7 = periodo2 * 3600;
@@ -221,22 +221,22 @@ public class Calculadora_MCU extends Fragment {
                 double frecuencia2, conversion8 ;
                 frecuencia2 = parseDouble(frecuencia);
 
-                if(seleccion8.equals("mHz") ){
+                if(seleccion8.equals("mHz  ") ){
                     conversion8 = frecuencia2 / 1000;
                     frecuencia = String.valueOf(conversion8);
                 }
 
-                if(seleccion8.equals("kHz") ){
+                if(seleccion8.equals("kHz  ") ){
                     conversion8 = frecuencia2 * 1000;
                     frecuencia = String.valueOf(conversion8);
                 }
 
-                if(seleccion8.equals("MHz") ){
+                if(seleccion8.equals("MHz  ") ){
                     conversion8 = frecuencia2 *1000000;
                     frecuencia= String.valueOf(conversion8);
                 }
 
-                if(seleccion8.equals("GHz") ){
+                if(seleccion8.equals("GHz  ") ){
                     conversion8 = frecuencia2 *1000000000;
                     frecuencia= String.valueOf(conversion8);
                 }
@@ -245,7 +245,7 @@ public class Calculadora_MCU extends Fragment {
 
 
             String seleccion9 = spinner_aceleracion_centripeta.getSelectedItem().toString();
-            if(seleccion9.equals("km/h²") && !aceleracion_centripe.isEmpty()){
+            if(seleccion9.equals("km/h²  ") && !aceleracion_centripe.isEmpty()){
                 double aceleracion2, conversion9;
                 aceleracion2 = parseDouble(aceleracion_centripe);
                 conversion9 = (aceleracion2 * 1000) / 12960000;

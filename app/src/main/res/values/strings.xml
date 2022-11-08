@@ -19,6 +19,13 @@
 
 
 
+    <string name="MRU_tt" translatable="false">MRU</string>
+    <string name="MRUA_tt" translatable="false">MRUA</string>
+    <string name="MCU_tt" translatable="false">MCU</string>
+    <string name="MCUA_tt" translatable="false">MCUA</string>
+    <string name="MPCL_tt" translatable="false">MPCL</string>
+    <string name="TV_tt" translatable="false">TIRO \nVERTICAL</string>
+    <string name="CA_tt" translatable="false">CAIDA LIBRE</string>
 
 
     <string name="MRU">Calculadora de MRU</string>

@@ -57,31 +57,31 @@ public class calculadora_MRUA extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         spinner_distancia = view.findViewById(R.id.spiner_distancia_mrua);
-        String[] medidas = {"m","km"};
+        String[] medidas = {"m  ","km  "};
         ArrayAdapter<String> adapter  =new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas);
         adapter.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_distancia.setAdapter(adapter);
 
         spinner_velocidad_inicial = view.findViewById(R.id.spiner_velocidad_inicial_mrua);
-        String[] medidas2 = {"m/s","km/h"};
+        String[] medidas2 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter2  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas2);
         adapter2.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_inicial.setAdapter(adapter2);
 
         spinner_velocidad_final = view.findViewById(R.id.spiner_velocidad_final_mrua);
-        String[] medidas3 = {"m/s","km/h"};
+        String[] medidas3 = {"m/s  ","km/h  "};
         ArrayAdapter<String> adapter3  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas3);
         adapter3.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_velocidad_final.setAdapter(adapter3);
 
         spinner_tiempo = view.findViewById(R.id.spiner_tiempo_mrua);
-        String[] medidas4 = {"s","h"};
+        String[] medidas4 = {"s  ","h  "};
         ArrayAdapter<String> adapter4  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas4);
         adapter4.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_tiempo.setAdapter(adapter4);
 
         spinner_aceleracion = view.findViewById(R.id.spiner_aceleracion_mrua);
-        String[] medidas5 = {"m/s²","km/h²"};
+        String[] medidas5 = {"m/s²  ","km/h²  "};
         ArrayAdapter<String> adapter5  = new ArrayAdapter<String>(getContext(),R.layout.color_spiner,medidas5);
         adapter5.setDropDownViewResource(R.layout.spiner_dropdown);
         spinner_aceleracion.setAdapter(adapter5);
@@ -117,7 +117,7 @@ public class calculadora_MRUA extends Fragment {
 
 
             String seleccion = spinner_distancia.getSelectedItem().toString();
-            if(seleccion.equals("km") && !distancia.isEmpty()){
+            if(seleccion.equals("km  ") && !distancia.isEmpty()){
                 double distancia2, conversion;
                 distancia2 = parseDouble(distancia);
                 conversion = distancia2 * 1000;
@@ -125,7 +125,7 @@ public class calculadora_MRUA extends Fragment {
             }
 
             String seleccion2 = spinner_velocidad_inicial.getSelectedItem().toString();
-            if(seleccion2.equals("km/h") && !velocidad_inicial.isEmpty()){
+            if(seleccion2.equals("km/h  ") && !velocidad_inicial.isEmpty()){
                 double velocidad_inicial2, conversion2;
                 velocidad_inicial2 = parseDouble(velocidad_inicial);
                 conversion2 = velocidad_inicial2 / 3.6;
@@ -133,7 +133,7 @@ public class calculadora_MRUA extends Fragment {
             }
 
             String seleccion3 = spinner_velocidad_final.getSelectedItem().toString();
-            if(seleccion3.equals("km/h") && !velocidad_final.isEmpty()){
+            if(seleccion3.equals("km/h  ") && !velocidad_final.isEmpty()){
                 double velocidad_final2, conversion3;
                 velocidad_final2 = parseDouble(velocidad_final);
                 conversion3 = velocidad_final2 / 3.6;
@@ -141,7 +141,7 @@ public class calculadora_MRUA extends Fragment {
             }
 
             String seleccion4 = spinner_tiempo.getSelectedItem().toString();
-            if(seleccion4.equals("h") && !time.isEmpty()){
+            if(seleccion4.equals("h  ") && !time.isEmpty()){
                 double tiempo2, conversion4;
                 tiempo2 = parseDouble(time);
                 conversion4 = tiempo2 * 3600;
@@ -149,7 +149,7 @@ public class calculadora_MRUA extends Fragment {
             }
 
             String seleccion5 = spinner_aceleracion.getSelectedItem().toString();
-            if(seleccion5.equals("km/h²") && !ac.isEmpty()){
+            if(seleccion5.equals("km/h²  ") && !ac.isEmpty()){
                 double aceleracion2, conversion5;
                 aceleracion2 = parseDouble(ac);
                 conversion5 = (aceleracion2 * 1000) / 12960000;
