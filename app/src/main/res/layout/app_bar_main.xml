@@ -159,18 +159,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/CA_tt"
-
                         />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textAlignment="gravity">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/name_frames_head"
+                        android:fontFamily="@font/inter_bold"
+                        android:paddingStart="40dp"
+                        android:paddingTop="0.09in"
+                        android:paddingEnd="40dp"
+                        android:paddingBottom="0.09in"
+                        android:text="Caida libre"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        />
+
+
+
 
                 </TableRow>
 
 
 
 
+
+
+
             </TableLayout>
-
-
-
 
 
 
@@ -190,3 +216,6 @@
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
