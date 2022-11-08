@@ -3,6 +3,8 @@ package com.calculadorasdefisica.calculadoradecinematica;
 import static java.lang.Double.parseDouble;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -31,6 +33,7 @@ public class caida_libre extends Fragment {
     private Button calcular;
     FloatingActionButton navegar;
     private Spinner spinner_gravedad,spinner_velocidad_final,spinner_velocidad_inicial,spinner_tiempo,spinner_altura;
+    TextView name;
 
 
 
@@ -48,6 +51,8 @@ public class caida_libre extends Fragment {
 
 
 
+
+
     }
 
     @Override
@@ -58,6 +63,8 @@ public class caida_libre extends Fragment {
 
 
 
+
+
     }
 
 
@@ -65,6 +72,8 @@ public class caida_libre extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
 
 
 

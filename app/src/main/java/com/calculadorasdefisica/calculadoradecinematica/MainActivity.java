@@ -1,7 +1,9 @@
 package com.calculadorasdefisica.calculadoradecinematica;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
 
 
 import com.example.pruebaa.R;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private  Context globalContext = null;
 
 
 
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
+
 
 
 

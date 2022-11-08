@@ -10,12 +10,16 @@
 
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F6F6F6"
         app:elevation="0dp">
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
 
 
             <TableLayout
@@ -94,9 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center"
-                    android:textAlignment="gravity">
+                    android:layout_marginEnd="10dp">
 
                     <TextView
                         android:id="@+id/mru_t"
@@ -158,46 +160,14 @@
                         style="@style/text_head"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/CA_tt"
-                        />
+                        android:text="@string/CA_tt" />
 
                 </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    
-                    android:textAlignment="gravity">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="48dp"
-                        android:background="@drawable/name_frames_head"
-                        android:fontFamily="@font/inter_bold"
-                        android:paddingStart="40dp"
-                        android:paddingTop="0.09in"
-                        android:paddingEnd="40dp"
-                        android:paddingBottom="0.09in"
-                        android:text="Caida libre"
-                        android:textColor="@color/black"
-                        android:textSize="25dp"
-                        />
-
-
-
-
-                </TableRow>
-
-
-
-
-
 
 
             </TableLayout>
 
+        </RelativeLayout>
 
 
         <androidx.appcompat.widget.Toolbar
@@ -213,6 +183,24 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main" />
+
+    <TextView
+        android:id="@+id/name_fragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name_frames_head"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="8dp"
+        android:text="CAIDA LIBRE"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
