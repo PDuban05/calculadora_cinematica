@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -55,6 +56,25 @@ public class calculadora_MRUA extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView name = getActivity().findViewById(R.id.name_fragments);
+        name.setText("MRUA");
+
+        ImageView mru = getActivity().findViewById(R.id.mru_v);
+        ImageView mrua = getActivity().findViewById(R.id.mrua_v);
+        ImageView mcu = getActivity().findViewById(R.id.mcu_v);
+        ImageView mcua = getActivity().findViewById(R.id.mcua_v);
+        ImageView mpcl = getActivity().findViewById(R.id.mpcl_v);
+        ImageView tv = getActivity().findViewById(R.id.tv_v);
+        ImageView ca = getActivity().findViewById(R.id.ca_v);
+
+        mru.setVisibility(View.INVISIBLE);
+        mrua.setVisibility(View.VISIBLE);
+        mcu.setVisibility(View.INVISIBLE);
+        mcua.setVisibility(View.INVISIBLE);
+        mpcl.setVisibility(View.INVISIBLE);
+        tv.setVisibility(View.INVISIBLE);
+        ca.setVisibility(View.INVISIBLE);
 
         spinner_distancia = view.findViewById(R.id.spiner_distancia_mrua);
         String[] medidas = {"m  ","km  "};

@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,13 +20,19 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import com.example.pruebaa.R;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+
+import butterknife.BindView;
+import butterknife.BindViews;
+import butterknife.ButterKnife;
 
 
 public class caida_libre extends Fragment {
@@ -34,8 +41,6 @@ public class caida_libre extends Fragment {
     private Button calcular;
     FloatingActionButton navegar;
     private Spinner spinner_gravedad,spinner_velocidad_final,spinner_velocidad_inicial,spinner_tiempo,spinner_altura;
-    TextView name;
-
 
 
 
@@ -53,23 +58,18 @@ public class caida_libre extends Fragment {
 
 
 
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_caida_libre, container, false);
 
 
 
-
-
-
     }
+
 
 
     @SuppressLint("StringFormatInvalid")
@@ -77,7 +77,29 @@ public class caida_libre extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        
+        TextView name = getActivity().findViewById(R.id.name_fragments);
+        String text = getString(R.string.CA_tt);
+        name.setText(text);
+
+        ImageView mru = getActivity().findViewById(R.id.mru_v);
+        ImageView mrua = getActivity().findViewById(R.id.mrua_v);
+        ImageView mcu = getActivity().findViewById(R.id.mcu_v);
+        ImageView mcua = getActivity().findViewById(R.id.mcua_v);
+        ImageView mpcl = getActivity().findViewById(R.id.mpcl_v);
+        ImageView tv = getActivity().findViewById(R.id.tv_v);
+        ImageView ca = getActivity().findViewById(R.id.ca_v);
+
+        mru.setVisibility(View.INVISIBLE);
+        mrua.setVisibility(View.INVISIBLE);
+        mcu.setVisibility(View.INVISIBLE);
+        mcua.setVisibility(View.INVISIBLE);
+        mpcl.setVisibility(View.INVISIBLE);
+        tv.setVisibility(View.INVISIBLE);
+        ca.setVisibility(View.VISIBLE);
+
+
+
+
 
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_cl);

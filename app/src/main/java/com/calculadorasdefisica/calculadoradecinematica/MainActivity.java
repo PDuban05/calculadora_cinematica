@@ -1,5 +1,6 @@
 package com.calculadorasdefisica.calculadoradecinematica;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,12 +20,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pruebaa.databinding.ActivityMainBinding;
 
+import butterknife.BindView;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     private  Context globalContext = null;
     private MenuItem item;
+
 
 
     @Override
@@ -51,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
+
+
+
     }
+
+
+
 
 
 

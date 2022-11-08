@@ -37,12 +37,12 @@
                     android:gravity="center">
 
                     <ImageView
-
                         android:id="@+id/mru_v"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/linea_head" />
+                        android:src="@drawable/linea_head"
+                        />
 
                     <ImageView
 
@@ -72,7 +72,7 @@
                         android:id="@+id/mpcl_v"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
+                        android:layout_weight="1"
                         android:src="@drawable/linea_head" />
 
                     <ImageView
@@ -80,7 +80,7 @@
                         android:id="@+id/tv_v"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
+                        android:layout_weight="1"
                         android:src="@drawable/linea_head" />
 
                     <ImageView
@@ -89,6 +89,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/linea_head"
+                        android:layout_weight="1"
 
                         />
 
@@ -142,7 +143,7 @@
                         style="@style/text_head"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
+                        android:layout_weight="1"
                         android:text="@string/MPCL_tt"
                         android:textAlignment="center" />
 
@@ -161,7 +162,10 @@
                         style="@style/text_head"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/CA_tt" />
+                        android:text="@string/CA_tt"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        />
 
                 </TableRow>
 
