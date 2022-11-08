@@ -68,11 +68,6 @@
         android:label="fragment_inf_mrua"
         tools:layout="@layout/fragment_inf_mrua" />
     <fragment
-        android:id="@+id/inicio"
-        android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
-        android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
-    <fragment
         android:id="@+id/caida_libre2"
         android:name="com.calculadorasdefisica.calculadoradecinematica.caida_libre"
         android:label="@string/CL"
@@ -82,4 +77,9 @@
         android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mru"
         android:label="@string/title_mru"
         tools:layout="@layout/fragment_inf_mru" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
 </navigation>

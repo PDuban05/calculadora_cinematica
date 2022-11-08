@@ -27,7 +27,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class calculadora_MRUA extends Fragment {
 
     private EditText tiempo_mrua,distancia_mrua,v1,v2,a;
-    private TextView resultado_mrua;
     private Button btn_calcular_mrua;
     FloatingActionButton navegar;
     private Spinner spinner_distancia,spinner_velocidad_inicial,spinner_velocidad_final,spinner_tiempo,spinner_aceleracion;

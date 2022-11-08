@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
 
+
+
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = binding.drawerLayout;
@@ -59,10 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
 
 
 
