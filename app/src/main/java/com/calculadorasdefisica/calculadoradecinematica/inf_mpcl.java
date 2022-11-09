@@ -2,11 +2,15 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.pruebaa.R;
 
@@ -62,5 +66,17 @@ public class inf_mpcl extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_inf_mpcl, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        RelativeLayout layout = getActivity().findViewById(R.id.head);
+        ViewGroup.LayoutParams params = layout.getLayoutParams();
+        params.height = 0;
+        layout.setLayoutParams(params);
+        TextView name = getActivity().findViewById(R.id.name_fragments);
+        name.setVisibility(View.INVISIBLE);
     }
 }

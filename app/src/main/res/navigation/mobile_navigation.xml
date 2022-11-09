@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/inicio">
+    app:startDestination="@id/inicio2">
 
     <fragment
         android:id="@+id/calculadora_MRU"
@@ -78,8 +78,8 @@
         android:label="@string/title_mru"
         tools:layout="@layout/fragment_inf_mru" />
     <fragment
-        android:id="@+id/inicio"
+        android:id="@+id/inicio2"
         android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
-        android:label="@string/inicio"
+        android:label="fragment_inicio"
         tools:layout="@layout/fragment_inicio" />
 </navigation>

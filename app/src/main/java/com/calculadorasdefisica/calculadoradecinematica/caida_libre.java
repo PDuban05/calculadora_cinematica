@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toolbar;
@@ -77,9 +78,16 @@ public class caida_libre extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        RelativeLayout layout = getActivity().findViewById(R.id.head);
         TextView name = getActivity().findViewById(R.id.name_fragments);
+        ViewGroup.LayoutParams params = layout.getLayoutParams();
+        params.height = 230;
+        layout.setLayoutParams(params);
+        name.setVisibility(View.VISIBLE);
         String text = getString(R.string.CA_tt);
         name.setText(text);
+
+
 
         ImageView mru = getActivity().findViewById(R.id.mru_v);
         ImageView mrua = getActivity().findViewById(R.id.mrua_v);

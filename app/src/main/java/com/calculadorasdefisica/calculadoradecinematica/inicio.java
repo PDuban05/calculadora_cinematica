@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 
 import com.example.pruebaa.R;
 
@@ -18,11 +18,9 @@ import com.example.pruebaa.R;
 public class inicio extends Fragment {
 
 
-
     public inicio() {
         // Required empty public constructor
     }
-
 
 
 
@@ -42,9 +40,6 @@ public class inicio extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
-
 
 
     }
