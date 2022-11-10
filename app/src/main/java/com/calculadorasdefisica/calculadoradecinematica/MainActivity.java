@@ -16,6 +16,8 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.view.menu.MenuView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -56,23 +58,27 @@ public class MainActivity extends AppCompatActivity {
                 R.id.calculadora_MRU,R.id.calculadora_MRUA,R.id.calculadora_MCU,R.id.calculadora_MCUA,R.id.caida_libre2,R.id.calculadora_tiro_vertical,R.id.calculadora_MPCL,R.id.inicio2)
                 .setOpenableLayout(drawer)
                 .build();
+
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
         navigationView.getMenu().findItem(R.id.inicio2).setOnMenuItemClickListener(item -> {
-
-
             TextView name = findViewById(R.id.name_fragments);
             String text = getString(R.string.inicio);
             name.setText(text);
 
-            return true;
 
+            return true;
         });
 
 
     }
+
+
+
+
 
 
 

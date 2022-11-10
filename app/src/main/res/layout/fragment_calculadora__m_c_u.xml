@@ -623,6 +623,7 @@
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -630,19 +631,17 @@
                 android:orientation="horizontal">
 
 
-
-                    <TextView
-                        style="@style/text"
-                        android:layout_width="109dp"
-                        android:layout_height="35dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="15dp"
-                        android:layout_marginBottom="8dp"
-                        android:paddingStart="10dp"
-                        android:background="@drawable/backgroungtext"
-                        android:gravity="center_vertical"
-                        android:text="@string/aceleracion_centripeta" />
-
+                <TextView
+                    style="@style/text"
+                    android:layout_width="109dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/backgroungtext"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/aceleracion_centripeta" />
 
 
                 <RelativeLayout
@@ -651,24 +650,21 @@
                     android:layout_marginEnd="0.2in">
 
 
-
-
                     <EditText
                         android:id="@+id/txtaceleracion_centripeta_mcu"
                         style="@style/edittext"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@drawable/background_edit_text"
-                        android:layout_marginBottom="8dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/background_edit_text"
                         android:ems="10"
                         android:gravity="center_vertical"
                         android:inputType="numberDecimal"
                         android:paddingStart="10dp"
                         android:paddingEnd="80dp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
-                        />
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -697,9 +693,6 @@
 
 
             </LinearLayout>
-
-
-
 
             <androidx.appcompat.widget.AppCompatButton
                 style="@style/bold_button"

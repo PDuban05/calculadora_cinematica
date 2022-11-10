@@ -47,9 +47,6 @@ public class inf_caida_libre extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         RelativeLayout layout = getActivity().findViewById(R.id.head);
-        ViewGroup.LayoutParams params = layout.getLayoutParams();
-        params.height = 0;
-        layout.setLayoutParams(params);
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.INVISIBLE);
 

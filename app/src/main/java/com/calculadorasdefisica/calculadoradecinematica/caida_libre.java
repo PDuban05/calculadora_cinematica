@@ -78,11 +78,8 @@ public class caida_libre extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RelativeLayout layout = getActivity().findViewById(R.id.head);
+
         TextView name = getActivity().findViewById(R.id.name_fragments);
-        ViewGroup.LayoutParams params = layout.getLayoutParams();
-        params.height = 230;
-        layout.setLayoutParams(params);
         name.setVisibility(View.VISIBLE);
         String text = getString(R.string.CA_tt);
         name.setText(text);

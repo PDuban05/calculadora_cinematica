@@ -59,13 +59,9 @@ public class calculadora_MCUA extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RelativeLayout layout = getActivity().findViewById(R.id.head);
-        TextView name = getActivity().findViewById(R.id.name_fragments);
-        ViewGroup.LayoutParams params = layout.getLayoutParams();
-        params.height = 230;
-        layout.setLayoutParams(params);
-        name.setVisibility(View.VISIBLE);
 
+        TextView name = getActivity().findViewById(R.id.name_fragments);
+        name.setVisibility(View.VISIBLE);
         name.setText("MCUA");
 
         ImageView mru = getActivity().findViewById(R.id.mru_v);

@@ -72,10 +72,7 @@ public class inf_tiro_vertical extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RelativeLayout layout = getActivity().findViewById(R.id.head);
-        ViewGroup.LayoutParams params = layout.getLayoutParams();
-        params.height = 0;
-        layout.setLayoutParams(params);
+
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.INVISIBLE);
     }
