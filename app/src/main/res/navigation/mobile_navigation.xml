@@ -82,4 +82,9 @@
         android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
         android:label="fragment_inicio"
         tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/head3"
+        android:name="com.example.pruebaa.head"
+        android:label="fragment_head"
+        tools:layout="@layout/fragment_head" />
 </navigation>

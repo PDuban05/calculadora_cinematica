@@ -23,6 +23,7 @@
     <string name="MPCL_tt" translatable="false">MPCL</string>
     <string name="TV_tt">TIRO \nVERTICAL</string>
     <string name="CA_tt">CAIDA LIBRE</string>
+    <string name="cinematica">CALCULADORAS \nDE CINEMATICA</string>
 
 
     <string name="MRU">Calculadora de MRU</string>

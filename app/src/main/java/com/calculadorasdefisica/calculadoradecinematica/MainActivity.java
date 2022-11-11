@@ -1,26 +1,22 @@
 package com.calculadorasdefisica.calculadoradecinematica;
-import static com.example.pruebaa.R.layout.activity_main;
-import static com.example.pruebaa.R.layout.fragment_inicio;
+import static android.app.PendingIntent.getActivity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
 import com.example.pruebaa.R;
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -70,8 +66,12 @@ public class MainActivity extends AppCompatActivity {
             name.setText(text);
 
 
+
             return true;
         });
+
+
+
 
 
     }
@@ -97,9 +97,14 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
 
+    }
 
+    public void links (){
 
     }
+
+
+
 
 
 

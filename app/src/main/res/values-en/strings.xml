@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="cinematica">CINEMATIC \nCALCULATORS</string>
     <string name="inicio" >HOME</string>
     <string name="CA_tt" >FREE FALL</string>
     <string name="TV_tt" >VERTICAL \nDRAFT</string>
