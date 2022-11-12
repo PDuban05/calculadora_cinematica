@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="cinematica">CINEMATIC \nCALCULATORS</string>
-    <string name="inicio" >HOME</string>
-    <string name="CA_tt" >FREE FALL</string>
-    <string name="TV_tt" >VERTICAL \nDRAFT</string>
     <string name="app_name">Calculadora de Fisica</string>
+    <string name="cinematica">KINEMATICS \nCALCULATOR</string>
+    <string name="CA_tt" >FREE FALL</string>
+    <string name="TV_tt" >VERTICAL SHOOT</string>
     <string name="MRU">MRU Calculator</string>
     <string name="MRUA">MRUA Calculator</string>
     <string name="cuerpo1_mrua">Rectilinear Uniformly Accelerated Motion or MRUA is motion that occurs along a straight line with constant acceleration. In the MRUA the acceleration is constant, it will never change, it is always the same. Be very careful, the constant is the acceleration, not the speed.</string>

@@ -19,7 +19,7 @@
             android:padding="10dp"
             android:orientation="vertical"
             android:background="@drawable/layaoutbackground"
-            android:elevation="20dp"
+            android:elevation="4dp"
             >
 
 
@@ -30,8 +30,19 @@
                 android:orientation="horizontal"
                 >
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         style="@style/text"
@@ -45,7 +56,7 @@
                         android:gravity="center_vertical"
                         android:text="@string/distancia" />
 
-
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -53,7 +64,19 @@
                     android:layout_marginEnd="0.2in"
                     >
 
-
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/txtdistancia_mrua"
@@ -108,9 +131,19 @@
                 android:layout_margin="5dp"
                 android:orientation="horizontal">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-
-
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         style="@style/text"
@@ -124,14 +157,26 @@
                         android:gravity="center_vertical"
                         android:text="@string/Velocidad_inicial" />
 
-
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="0.2in">
 
-
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
 
                     <EditText
                         android:id="@+id/txtvelocidad_inicial_mrua"
@@ -187,8 +232,19 @@
                 android:layout_margin="5dp"
                 android:orientation="horizontal">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         style="@style/text"
@@ -202,13 +258,26 @@
                         android:gravity="center_vertical"
                         android:text="@string/Velocidad_final" />
 
-
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="0.2in">
 
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
 
                     <EditText
                         android:id="@+id/txtvelocidad_final_mrua"
@@ -261,9 +330,19 @@
                 android:layout_margin="5dp"
                 android:orientation="horizontal">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-
-
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         style="@style/text"
@@ -277,14 +356,26 @@
                         android:gravity="center_vertical"
                         android:text="@string/tiempo" />
 
-
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="0.2in">
 
-
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
 
                     <EditText
                         android:id="@+id/txttiempo_mrua"
@@ -337,8 +428,19 @@
                 android:layout_margin="5dp"
                 android:orientation="horizontal">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/textbaground2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         style="@style/text"
@@ -352,14 +454,26 @@
                         android:gravity="center_vertical"
                         android:text="@string/aceleración" />
 
-
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="0.2in">
 
-
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_background2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="112dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        />
 
 
                     <EditText
@@ -446,11 +560,7 @@
                 app:borderWidth="1dp"
                 app:rippleColor="@color/black" />
 
-
         </LinearLayout>
-
-
-
     </ScrollView>
 
 

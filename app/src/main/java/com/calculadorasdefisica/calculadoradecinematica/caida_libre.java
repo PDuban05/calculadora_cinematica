@@ -3,15 +3,12 @@ package com.calculadorasdefisica.calculadoradecinematica;
 import static java.lang.Double.parseDouble;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,19 +18,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.pruebaa.R;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-
-import butterknife.BindView;
-import butterknife.BindViews;
-import butterknife.ButterKnife;
 
 
 public class caida_libre extends Fragment {
@@ -42,6 +32,7 @@ public class caida_libre extends Fragment {
     private Button calcular;
     FloatingActionButton navegar;
     private Spinner spinner_gravedad,spinner_velocidad_final,spinner_velocidad_inicial,spinner_tiempo,spinner_altura;
+
 
 
 
@@ -58,7 +49,6 @@ public class caida_libre extends Fragment {
 
 
 
-
     }
 
     @Override
@@ -72,19 +62,15 @@ public class caida_libre extends Fragment {
     }
 
 
-
     @SuppressLint("StringFormatInvalid")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.VISIBLE);
         String text = getString(R.string.CA_tt);
         name.setText(text);
-
-
 
         ImageView mru = getActivity().findViewById(R.id.mru_v);
         ImageView mrua = getActivity().findViewById(R.id.mrua_v);
@@ -101,9 +87,6 @@ public class caida_libre extends Fragment {
         mpcl.setVisibility(View.INVISIBLE);
         tv.setVisibility(View.INVISIBLE);
         ca.setVisibility(View.VISIBLE);
-
-
-
 
 
 

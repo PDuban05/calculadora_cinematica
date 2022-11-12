@@ -4,5 +4,9 @@
     android:layout_height="match_parent"
     android:textColor="@color/blue_f"
     android:background="@color/white"
-    android:fontFamily="@font/inter_light"/>
+    android:fontFamily="@font/inter_light"
 
+
+    >
+
+</TextView>

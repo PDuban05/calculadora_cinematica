@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -62,8 +61,6 @@ public class Calculadora_MCU extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.VISIBLE);
         name.setText("MCU");
@@ -83,6 +80,7 @@ public class Calculadora_MCU extends Fragment {
         mpcl.setVisibility(View.INVISIBLE);
         tv.setVisibility(View.INVISIBLE);
         ca.setVisibility(View.INVISIBLE);
+
 
         spinner_angulo = view.findViewById(R.id.spiner_angulo_mcu);
         String[] medidas = {"rad  ","º  "};

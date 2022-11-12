@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -57,7 +56,6 @@ public class calculadora_tiro_vertical extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.VISIBLE);
         String text = getString(R.string.TV_tt);
@@ -78,6 +76,9 @@ public class calculadora_tiro_vertical extends Fragment {
         mpcl.setVisibility(View.INVISIBLE);
         tv.setVisibility(View.VISIBLE);
         ca.setVisibility(View.INVISIBLE);
+
+
+
 
         spinner_gravedad = view.findViewById(R.id.spiner_gravedad_tv);
         String[] medidas5 = {"m/s²  "};

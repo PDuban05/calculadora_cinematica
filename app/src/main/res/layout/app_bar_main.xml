@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.calculadorasdefisica.calculadoradecinematica.MainActivity"
-    android:background="#f6f6f6"
-    android:elevation="0dp"
-    android:name="androidx.navigation.fragment.NavHostFragment">
-
+    >
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -187,7 +183,6 @@
         </RelativeLayout>
 
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="40dp"
@@ -214,14 +209,11 @@
         android:paddingEnd="20dp"
         android:layout_marginTop="50dp"
         android:paddingBottom="8dp"
-        android:text="@string/inicio"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="center" />
 
 
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-

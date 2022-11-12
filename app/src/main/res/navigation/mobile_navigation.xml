@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/inicio2">
+    app:startDestination="@id/inicio11">
 
     <fragment
         android:id="@+id/calculadora_MRU"
@@ -11,7 +11,11 @@
         android:label="@string/MRU"
         tools:layout="@layout/fragment_calculadora__m_r_u"
 
-        />
+        >
+        <action
+            android:id="@+id/action_calculadora_MRU_to_inicio11"
+            app:destination="@id/inicio11" />
+    </fragment>
     <fragment
         android:id="@+id/calculadora_MRUA"
         android:name="com.calculadorasdefisica.calculadoradecinematica.calculadora_MRUA"
@@ -68,6 +72,15 @@
         android:label="fragment_inf_mrua"
         tools:layout="@layout/fragment_inf_mrua" />
     <fragment
+        android:id="@+id/inicio11"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio11_to_calculadora_MRU2"
+            app:destination="@id/calculadora_MRU" />
+    </fragment>
+    <fragment
         android:id="@+id/caida_libre2"
         android:name="com.calculadorasdefisica.calculadoradecinematica.caida_libre"
         android:label="@string/CL"
@@ -77,14 +90,8 @@
         android:name="com.calculadorasdefisica.calculadoradecinematica.inf_mru"
         android:label="@string/title_mru"
         tools:layout="@layout/fragment_inf_mru" />
-    <fragment
-        android:id="@+id/inicio2"
-        android:name="com.calculadorasdefisica.calculadoradecinematica.inicio"
-        android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
-    <fragment
-        android:id="@+id/head3"
-        android:name="com.example.pruebaa.head"
-        android:label="fragment_head"
-        tools:layout="@layout/fragment_head" />
+    <activity
+        android:id="@+id/mainActivity4"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.MainActivity"
+        android:label="MainActivity" />
 </navigation>

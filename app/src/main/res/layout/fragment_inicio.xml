@@ -1,159 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6f6f6"
-    tools:context="com.calculadorasdefisica.calculadoradecinematica.inicio">
+    tools:context="com.calculadorasdefisica.calculadoradecinematica.inicio"
+    android:elevation="4dp">
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/title"
-            android:paddingStart="20dp"
-            android:paddingTop="6dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="8dp"
-            android:text="@string/cinematica"
-            />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
-            android:layout_margin="20dp">
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/background_edit_text"
-                android:layout_weight="1"
-                android:text="@string/MRU_tt"
-                android:layout_margin="2dp"
-                />
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/background_edit_text"
-                android:text="@string/MCUA_tt"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
+            android:elevation="4dp"
+            android:orientation="vertical"
             android:layout_margin="20dp"
-            >
+            tools:showIn="navigation_view"
+            android:checkableBehavior="single">
 
             <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/background_edit_text"
-                android:text="@string/MRUA_tt"
-                android:layout_weight="1"
-                android:layout_margin="2dp"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/background_edit_text"
-                 android:layout_weight="1"
-                android:layout_marginStart="10dp"
-                android:text="@string/MPCL_tt"
-                />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/background_edit_text"
-                android:layout_marginStart="10dp"
-                android:text="@string/MCU_tt"
-                android:layout_weight="1"
-                android:layout_margin="2dp"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/background_edit_text"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title"
+                android:onClick="mru"
                 android:paddingStart="20dp"
                 android:paddingTop="6dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="8dp"
-                android:layout_marginStart="10dp"
-                android:text="@string/TV_tt"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
+                android:text="@string/cinematica" />
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_margin="20dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"/>
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp">
 
-            <androidx.appcompat.widget.AppCompatButton
-                style="@style/title2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/background_edit_text"
-                android:text="@string/CA_tt"
-                android:layout_weight="1"
-                android:layout_margin="2dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:id="@+id/mru_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_edit_text"
+                    android:layout_weight="1"
+                    android:text="@string/MRU_tt"
+                    android:layout_margin="2dp"
+                    />
 
-                />
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/background_edit_text"
+                    android:text="@string/MCUA_tt"
+                    android:layout_weight="1"/>
+            </LinearLayout>
 
-            <TextView
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"/>
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/background_edit_text"
+                    android:text="@string/MRUA_tt"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_edit_text"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/MPCL_tt"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_edit_text"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/MCU_tt"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_edit_text"
+                    android:paddingStart="20dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/TV_tt"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_edit_text"
+                    android:text="@string/CA_tt"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"/>
+            </LinearLayout>
+
+
         </LinearLayout>
-
-
-    </LinearLayout>
 
     </ScrollView>
 
-
-</RelativeLayout>
+</FrameLayout>
