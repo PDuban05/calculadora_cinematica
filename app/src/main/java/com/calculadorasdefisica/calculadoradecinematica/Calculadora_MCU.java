@@ -61,6 +61,7 @@ public class Calculadora_MCU extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         TextView name = getActivity().findViewById(R.id.name_fragments);
         name.setVisibility(View.VISIBLE);
         name.setText("MCU");

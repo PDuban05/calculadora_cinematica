@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/inicio11">
+    app:startDestination="@id/index">
 
     <fragment
         android:id="@+id/calculadora_MRU"
@@ -94,4 +94,9 @@
         android:id="@+id/mainActivity4"
         android:name="com.calculadorasdefisica.calculadoradecinematica.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/index"
+        android:name="com.calculadorasdefisica.calculadoradecinematica.index"
+        android:label="fragment_index"
+        tools:layout="@layout/fragment_index" />
 </navigation>

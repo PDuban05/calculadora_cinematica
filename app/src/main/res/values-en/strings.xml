@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Calculadora de Fisica</string>
+    <string name="inicio">HOME</string>
     <string name="cinematica">KINEMATICS \nCALCULATOR</string>
     <string name="CA_tt" >FREE FALL</string>
     <string name="TV_tt" >VERTICAL SHOOT</string>

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.calculadorasdefisica.calculadoradecinematica.Calculadora_MRU"
-    tools:ignore="UselessParent">
+    tools:ignore="UselessParent"
+    android:background="#f6f6f6">
 
 
     <ScrollView
@@ -23,6 +24,7 @@
 
 
             <TextView
+                style="@style/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -39,6 +41,7 @@
                 android:src="@drawable/grafico_mcu" />
 
             <TextView
+                style="@style/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -58,6 +61,7 @@
                 android:src="@drawable/formulas_mcu" />
 
             <TextView
+                style="@style/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -69,6 +73,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                style="@style/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
