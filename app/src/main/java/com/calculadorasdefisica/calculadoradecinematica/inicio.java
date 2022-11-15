@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.pruebaa.R;
@@ -67,6 +68,31 @@ public class inicio extends Fragment {
                 TextView name = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.name_fragments);
                 String text = getString(R.string.inicio);
                 name.setText(text);
+
+
+
+
+                ImageView mru = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mru_v);
+                ImageView mrua = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mrua_v);
+                ImageView mcu = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mcu_v);
+                ImageView mcua = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mcua_v);
+                ImageView mpcl = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mpcl_v);
+                ImageView tv = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.tv_v);
+                ImageView ca = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.ca_v);
+
+                mru.setVisibility(View.VISIBLE);
+                mrua.setVisibility(View.VISIBLE);
+                mcu.setVisibility(View.VISIBLE);
+                mcua.setVisibility(View.VISIBLE);
+                mpcl.setVisibility(View.VISIBLE);
+                tv.setVisibility(View.VISIBLE);
+                ca.setVisibility(View.VISIBLE);
+
+
+
+
+
+
             }
         } catch (Exception e) {
             e.printStackTrace();

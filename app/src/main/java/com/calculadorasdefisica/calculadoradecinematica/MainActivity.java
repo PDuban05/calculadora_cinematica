@@ -1,6 +1,7 @@
 package com.calculadorasdefisica.calculadoradecinematica;
 
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.Menu;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         TextView name = findViewById(R.id.name_fragments);
         String text = getString(R.string.inicio);
         name.setText(text);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
     }
