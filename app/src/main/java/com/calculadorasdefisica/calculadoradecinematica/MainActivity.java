@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         TextView name = findViewById(R.id.name_fragments);
-        name.setText("inicio");
+        String text = getString(R.string.inicio);
+        name.setText(text);
+
 
     }
 

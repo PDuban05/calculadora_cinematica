@@ -5,7 +5,8 @@
     android:textColor="@color/blue_f"
     android:background="@color/white"
     android:fontFamily="@font/inter_light"
-
+    android:gravity="center"
+    android:padding="8dp"
 
     >
 

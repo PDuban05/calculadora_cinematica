@@ -12,6 +12,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.renderscript.ScriptGroup;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,11 +62,15 @@ public class inicio extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        TextView name = getActivity().findViewById(R.id.name_fragments);
-
-        name.setText("inicio");
-
-
+        try {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+                TextView name = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.name_fragments);
+                String text = getString(R.string.inicio);
+                name.setText(text);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
         Button mru = view.findViewById(R.id.mru_home);
