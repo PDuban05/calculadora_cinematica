@@ -19,8 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.pruebaa.R;
-import com.example.pruebaa.databinding.ActivityMainBinding;
-import com.google.android.material.navigation.NavigationView;
+
 
 
 import java.lang.reflect.Method;
@@ -28,8 +27,7 @@ import java.lang.reflect.Method;
 
 public class inicio extends Fragment {
 
-    private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
+
 
 
     MainActivity setname;
@@ -63,9 +61,7 @@ public class inicio extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        TextView name = getActivity().findViewById(R.id.name_fragments);
-        String text = getString(R.string.inicio);
-        name.setText(text);
+
 
 
 
