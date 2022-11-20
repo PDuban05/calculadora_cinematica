@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Convertidor de unidades</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fuerza">Fuerza</string>
+
+    <string name="newton">Newton</string>
+    <string name="newton1">N</string>
+
+    <string name="kilonewton">kilonewton</string>
+    <string name="kilonewton1">kN</string>
+
+    <string name="gramo_fuerza">Gramo-Fuerza</string>
+    <string name="gramo_fuerza1">gf</string>
+
+    <string name="kilogramo_fuerza">Kilogramo-Fuerza</string>
+    <string name="kilogramo_fuerza1">kgf</string>
+
+    <string name="libra_fuerza">Libra-Fuerza</string>
+    <string name="libra_fuerza1">lbf</string>
+
+    <string name="onza_fuerza">Onza-fuerza</string>
+    <string name="onza_fuerza1">ozf</string>
+
+    <string name="joule_metro">Joule-metro</string>
+    <string name="joule_metro1">J/m</string>
+
+    <string name="dina">Dina</string>
+    <string name="dina1">dyn</string>
+
+    <string name="poundal">Puondal</string>
+    <string name="poundal1">pdl</string>
+
+    <string name="pondio">Pondio</string>
+    <string name="pondio1">p</string>
+
+
+    <string name="energia">Energia / Trabajo</string>
+    <string name="megajoule">Megajoule</string>
+    <string name="megajoule1">MJ</string>
+
+    <string name="kilojoule">Kilojoule</string>
+    <string name="kilojoule1">KJ</string>
+
+    <string name="joule">Joule</string>
+    <string name="joule1">J</string>
+
+    <string name="kilowatt_hora">kilowatt-hora</string>
+    <string name="kilowatt_hora1">kWh</string>
+
+    <string name="watt_hora">Watt-hora</string>
+    <string name="watt_hora1">Wh</string>
+
+    <string name="btu_it">Btu(IT)</string>
+    <string name="btu_it1">btu</string>
+
+    <string name="caloria_it">Caloria (IT)</string>
+    <string name="caloria_it1">cal</string>
+
+    <string name="caloria_th">Caloria (th)</string>
+    <string name="caloria_th1">cal</string>
+
+    <string name="tonelada_explosivos">Tonelada(explosivos)</string>
+
+    <string name="kilogramo_fuerza_metro">Kilogramo Fuerza Metro</string>
+    <string name="kilogramo_fuerza_metro1">kgf·m</string>
+
+    <string name="pie_libra_fuerza">Pie Libra Fuerza</string>
+    <string name="pie_libra_fuerza1">lbf·ft</string>
+
+    <string name="pie_poundal">Pie poundal</string>
+    <string name="pie_poundal1">pdl·ft</string>
+
+    <string name="ergio">Ergio</string>
+    <string name="ergio1">erg</string>
+
+    <string name="electronvolt">Electronvolt</string>
+    <string name="electronvolt1">eV</string>
+
+
+    <string name="aceleracion">Aceleración</string>
+    <string name="kilometro_s2">Kilometro / s²</string>
+    <string name="kilometro_s21">Km/s²</string>
+
+    <string name="metro_s2">Metro / s²</string>
+    <string name="metro_s21">m/s²</string>
+
+
+    <string name="milimetro_s2">Milimetro / s²</string>
+    <string name="milimetro_s21">mm/s²</string>
+
+    <string name="micrometro_s2">Micrometro / s²</string>
+    <string name="micrometro_s21">µm/s²</string>
+
+    <string name="nanometro_s2">nanometro / s²</string>
+    <string name="nanometro_s21">nm/s²</string>
+
+    <string name="milla_s2">Milla / s²</string>
+    <string name="milla_s21">mi/s²</string>
+
+    <string name="yarda_s2">Yarda / s²</string>
+    <string name="yarda_s21">yd/s²</string>
+
+    <string name="pie_s2">pie / s²</string>
+    <string name="pie_s21">ft/s²</string>
+
+    <string name="pulgada_s2">pulgada / s²</string>
+    <string name="pulgada_s21">in/s²</string>
+
+    <string name="gal">Gal</string>
+    <string name="gal1">gal</string>
+
+    <string name="galileo">Galileo</string>
+    <string name="galileo1">Gal</string>
+
+    <string name="aceleracion_gravedad">Aceleración de la gravedad</string>
+    <string name="aceleracion_gravedad1">g</string>
+
+
+    <string name="tiempo">Tiempo</string>
+    <string name="segundos">Segundos</string>
+    <string name="minutos">Minutos</string>
+    <string name="horas">Horas</string>
+    <string name="dias">Dias</string>
+    <string name="semanas">Semanas</string>
+    <string name="meses">Meses</string>
+    <string name="años">años</string>
+    <string name="decadas">Decadas</string>
+    <string name="siglos">Siglos</string>
+    <string name="milenios">milenios</string>
+
+
+    <string name="longitud">Longitud / Distancia</string>
+    <string name="velocidad">velocidad</string>
+
+    <string name="metro_segundos">Metro / segundo</string>
+    <string name="metro_segundos1">m/s</string>
+
+    <string name="kilometro_hora">Kilómetro / hora </string>
+    <string name="kilometro_hora1">Km/h </string>
+
+    <string name="milla_hora">milla / hora </string>
+    <string name="milla_hora1">mi/h </string>
+
+    <string name="Pie_segundo">Pie / segundo</string>
+    <string name="Pie_segundo1">ft/s</string>
+
+    <string name="Nudo">Nudo</string>
+    <string name="Nudo1">kt</string>
+
+    <string name="Mach">Mach</string>
+    <string name="Mach1">M</string>
+
+    <string name="velocidad_luz">Velocidad de la luz</string>
+    <string name="velocidad_luz1">c</string>
+
+
+    <string name="micrometro">Micrómetro</string>
+    <string name="micrometro1">µm</string>
+
+    <string name="milimetro">Milímetro</string>
+    <string name="milimetro1">mm</string>
+
+    <string name="centimetro">Centímetro</string>
+    <string name="centimetro1">cm</string>
+
+    <string name="metro">Metro</string>
+    <string name="metro1">m</string>
+
+    <string name="kilometro">Kilómetro</string>
+    <string name="kilometro1">km</string>
+
+    <string name="pulgada">Pulgada</string>
+    <string name="pulgada1">in</string>
+
+    <string name="pie">pie</string>
+    <string name="pie1">ft</string>
+
+    <string name="yarda">Yarda</string>
+    <string name="yarda1">yd</string>
+
+    <string name="furlong">Furlong</string>
+    <string name="furlong1">Fur</string>
+
+    <string name="milla">Milla</string>
+    <string name="milla1">mi</string>
+
+    <string name="milla_nautica">Milla Náutica</string>
+    <string name="milla_nautica1">nmi</string>
+
+    <string name="año_luz">Año luz</string>
+    <string name="año_luz1">ly</string>
+
+    <string name="parsec">Parsec</string>
+    <string name="parsec1">pc</string>
+
+    <string name="unidad_astronomica">Unidad astronomica</string>
+    <string name="unidad_astronomica1">AU</string>
+
+    <string name="angstrom">Angstrom</string>
+    <string name="angstrom1">A</string>
+
+    <string name="mil">Mil</string>
+    <string name="mil1">mil</string>
+
+
+</resources>

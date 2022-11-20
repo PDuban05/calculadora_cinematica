@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.calculadorasdefisica.convertidordeunidades.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.calculadorasdefisica.convertidordeunidades.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.calculadorasdefisica.convertidordeunidades.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.calculadorasdefisica.convertidordeunidades.inicio"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/longitud"
+        android:name="com.calculadorasdefisica.convertidordeunidades.longitud"
+        android:label="fragment_longitud"
+        tools:layout="@layout/fragment_longitud" />
+    <fragment
+        android:id="@+id/velocidad"
+        android:name="com.calculadorasdefisica.convertidordeunidades.velocidad"
+        android:label="fragment_velocidad"
+        tools:layout="@layout/fragment_velocidad" />
+    <fragment
+        android:id="@+id/tiempo"
+        android:name="com.calculadorasdefisica.convertidordeunidades.tiempo"
+        android:label="fragment_tiempo"
+        tools:layout="@layout/fragment_tiempo" />
+    <fragment
+        android:id="@+id/aceleracion"
+        android:name="com.calculadorasdefisica.convertidordeunidades.aceleracion"
+        android:label="fragment_aceleracion"
+        tools:layout="@layout/fragment_aceleracion" />
+    <fragment
+        android:id="@+id/energia2"
+        android:name="com.calculadorasdefisica.convertidordeunidades.energia"
+        android:label="fragment_energia"
+        tools:layout="@layout/fragment_energia" />
+    <fragment
+        android:id="@+id/fuerza2"
+        android:name="com.calculadorasdefisica.convertidordeunidades.fuerza"
+        android:label="fragment_fuerza"
+        tools:layout="@layout/fragment_fuerza" />
+</navigation>
