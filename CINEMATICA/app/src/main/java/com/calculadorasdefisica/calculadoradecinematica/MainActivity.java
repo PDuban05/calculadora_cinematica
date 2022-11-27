@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
         MediaPlayer sonido = MediaPlayer.create(this,R.raw.welcome);
         sonido.start();
+
+
+
 
 
 

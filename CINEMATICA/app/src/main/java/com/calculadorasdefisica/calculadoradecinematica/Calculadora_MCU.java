@@ -769,8 +769,4 @@ public class Calculadora_MCU extends Fragment {
 
 
 
-
-
-
-
 }

@@ -71,8 +71,6 @@ public class inicio extends Fragment {
                 name.setText(text);
 
 
-
-
                 ImageView mru = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mru_v);
                 ImageView mrua = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mrua_v);
                 ImageView mcu = getActivity().requireViewById(R.id.app_bar_main).findViewById(R.id.mcu_v);
@@ -88,9 +86,6 @@ public class inicio extends Fragment {
                 mpcl.setVisibility(View.VISIBLE);
                 tv.setVisibility(View.VISIBLE);
                 ca.setVisibility(View.VISIBLE);
-
-
-
 
 
 

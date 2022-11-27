@@ -188,7 +188,12 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:background="@drawable/appbar"
-            app:titleTextColor="@android:color/transparent" />
+            app:titleTextColor="@android:color/transparent"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            app:collapseIcon="@color/black"
+            
+            />
 
 
     </com.google.android.material.appbar.AppBarLayout>
