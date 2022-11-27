@@ -2,6 +2,9 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import static java.lang.Double.parseDouble;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -143,10 +148,6 @@ public class calculadora_MPCL extends Fragment {
 
 
 
-
-
-
-
         gravedad= view.findViewById(R.id.txtgravedad_mpcl);
         angulo_tiro = view.findViewById(R.id.txt_angulo_tiro_mpcl);
         velocidad_inicial= view.findViewById(R.id.txt_velocidad_inicial_mpcl);
@@ -160,6 +161,20 @@ public class calculadora_MPCL extends Fragment {
 
         calcular= view.findViewById(R.id.btn_calcular_mpcl);
         navegar = (FloatingActionButton) view.findViewById(R.id.navegar_mpcl);
+
+        cargarpreferencias();
+
+        gravedad.addTextChangedListener(changempcl);
+        angulo_tiro.addTextChangedListener(changempcl);
+        velocidad_inicial.addTextChangedListener(changempcl);
+        velocidad_inicial_x.addTextChangedListener(changempcl);
+        velocidad_inicial_y.addTextChangedListener(changempcl);
+        tiempo.addTextChangedListener(changempcl);
+        tiempo_vuelo.addTextChangedListener(changempcl);
+        altura_inicial.addTextChangedListener(changempcl);
+        altura_maxima.addTextChangedListener(changempcl);
+        desplazamiento_horizontal.addTextChangedListener(changempcl);
+
 
         calcular.setOnClickListener(v -> {
 
@@ -501,25 +516,13 @@ public class calculadora_MPCL extends Fragment {
             }
 
 
-
-
-
-
-
-
-
         });
 
 
-
-
-
-
-
-
         navegar.setOnClickListener(v -> {
-
            Navigation.findNavController(navegar).navigate(R.id.inf_mpcl);
+            MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+            sonido.start();
         });
 
         ImageButton limpiar = (ImageButton) view.findViewById(R.id.btn_limpiar_mpcl);
@@ -621,8 +624,89 @@ public class calculadora_MPCL extends Fragment {
             }
         });
 
+    }
 
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mpcl", Context.MODE_PRIVATE);
+        String gravedad1 = preferences.getString("gravedad","");
+        String angulo_tiro1 = preferences.getString("angulo_tiro","");
+        String velocidad_inicial1 = preferences.getString("velocidad_inicial","");
+        String velocidad_inicial_x1 = preferences.getString("velocidad_inicial_x","");
+        String velocidad_inicial_y1 = preferences.getString("velocidad_inicial_y","");
+        String tiempo1 = preferences.getString("tiempo","");
+        String tiempo_vuelo1 = preferences.getString("tiempo_vuelo","");
+        String altura_inicial1 = preferences.getString("altura_inicial","");
+        String altura_maxima1 = preferences.getString("altura_maxima","");
+        String desplazamiento_horizontal1 = preferences.getString("desplazamiento_horizontal","");
+
+        gravedad.setText(gravedad1);
+        angulo_tiro.setText(angulo_tiro1);
+        velocidad_inicial.setText(velocidad_inicial1);
+        velocidad_inicial_x.setText(velocidad_inicial_x1);
+        velocidad_inicial_y.setText(velocidad_inicial_y1);
+        tiempo.setText(tiempo1);
+        tiempo_vuelo.setText(tiempo_vuelo1);
+        altura_inicial.setText(altura_inicial1);
+        altura_maxima.setText(altura_maxima1);
+        desplazamiento_horizontal.setText(desplazamiento_horizontal1);
+
+    }
+
+    private void preferencias_mpcl (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mpcl", Context.MODE_PRIVATE);
+
+        String gravedad1 = gravedad.getText().toString();
+        String angulo_tiro1 = angulo_tiro.getText().toString();
+        String velocidad_inicial1 = velocidad_inicial.getText().toString();
+        String velocidad_inicial_x1 = velocidad_inicial_x.getText().toString();
+        String velocidad_inicial_y1 = velocidad_inicial_y.getText().toString();
+        String tiempo1 = tiempo.getText().toString();
+        String tiempo_vuelo1= tiempo_vuelo.getText().toString();
+        String altura_inicial1 = altura_inicial.getText().toString();
+        String altura_maxima1= altura_maxima.getText().toString();
+        String desplazamiento_horizontal1= desplazamiento_horizontal.getText().toString();
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("gravedad",gravedad1);
+        editor.putString("angulo_tiro",angulo_tiro1);
+        editor.putString("velocidad_inicial",velocidad_inicial1);
+        editor.putString("velocidad_inicial_x",velocidad_inicial_x1);
+        editor.putString("velocidad_inicial_y",velocidad_inicial_y1);
+        editor.putString("tiempo",tiempo1);
+        editor.putString("tiempo_vuelo",tiempo_vuelo1);
+        editor.putString("altura_inicial",altura_inicial1);
+        editor.putString("altura_maxima",altura_maxima1);
+        editor.putString("desplazamiento_horizontal",desplazamiento_horizontal1);
+
+
+        editor.commit();
 
 
     }
+
+    private TextWatcher changempcl = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_mpcl();
+        }
+    };
+
+
+
+
+
+
 }

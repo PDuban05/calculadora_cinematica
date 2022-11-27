@@ -2,6 +2,9 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import static java.lang.Double.parseDouble;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,11 +114,6 @@ public class calculadora_MRUA extends Fragment {
 
 
 
-
-
-
-
-
         tiempo_mrua =view.findViewById(R.id.txttiempo_mrua);
         distancia_mrua=view.findViewById(R.id.txtdistancia_mrua);
         v1=view.findViewById(R.id.txtvelocidad_inicial_mrua);
@@ -123,6 +123,14 @@ public class calculadora_MRUA extends Fragment {
 
         btn_calcular_mrua = view.findViewById(R.id.btn_calcular_mrua);
         navegar =  (FloatingActionButton) view.findViewById(R.id.navegar_mrua);
+
+        cargarpreferencias();
+
+        tiempo_mrua.addTextChangedListener(changemrua);
+        distancia_mrua.addTextChangedListener(changemrua);
+        v1.addTextChangedListener(changemrua);
+        v2.addTextChangedListener(changemrua);
+        a.addTextChangedListener(changemrua);
 
 
         btn_calcular_mrua.setOnClickListener(view1 -> {
@@ -483,8 +491,9 @@ public class calculadora_MRUA extends Fragment {
 
 
         navegar.setOnClickListener(v -> {
-
             Navigation.findNavController(navegar).navigate(R.id.inf_mrua);
+            MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+            sonido.start();
         });
 
 
@@ -540,17 +549,67 @@ public class calculadora_MRUA extends Fragment {
             }
         });
 
+    }
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mrua", Context.MODE_PRIVATE);
+        String tiempo = preferences.getString("tiempo","");
+        String distancia = preferences.getString("distancia","");
+        String velocidad_inicial = preferences.getString("velocidad_inicial","");
+        String velocidad_final = preferences.getString("velocidad_final","");
+        String aceleracion = preferences.getString("aceleracion","");
 
 
+        tiempo_mrua.setText(tiempo);
+        distancia_mrua.setText(distancia);
+        v1.setText(velocidad_inicial);
+        v2.setText(velocidad_final);
+        a.setText(aceleracion);
+
+    }
+
+    private void preferencias_mrua (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mrua", Context.MODE_PRIVATE);
+
+        String tiempo = tiempo_mrua.getText().toString();
+        String distancia = distancia_mrua.getText().toString();
+        String velocidad_inicial = v1.getText().toString();
+        String velocidad_final =v2.getText().toString();
+        String aceleracion = a.getText().toString();
 
 
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("tiempo",tiempo);
+        editor.putString("distancia", distancia);
+        editor.putString("velocidad_inicial",velocidad_inicial);
+        editor.putString("velocidad_final",velocidad_final);
+        editor.putString("aceleracion",aceleracion);
 
 
-
-
+        editor.commit();
 
 
     }
+
+    private TextWatcher changemrua = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_mrua();
+        }
+    };
+
 
 
 

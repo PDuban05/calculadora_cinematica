@@ -2,6 +2,8 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import static java.lang.Double.parseDouble;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -156,6 +160,18 @@ public class calculadora_MCUA extends Fragment {
         btn_calcular_mcua = view.findViewById(R.id.btn_calcular_mcua);
         navegar =  (FloatingActionButton) view.findViewById(R.id.navegar_mcua);
 
+        cargarpreferencias();
+
+        angulo.addTextChangedListener(changemcua);
+        rapidez_angular_inicial.addTextChangedListener(changemcua);
+        rapidez_angular_final.addTextChangedListener(changemcua);
+        aceleracion_angular.addTextChangedListener(changemcua);
+        tiempo.addTextChangedListener(changemcua);
+        radio.addTextChangedListener(changemcua);
+        longitud_arco.addTextChangedListener(changemcua);
+        rapidez_tangencial_inicial.addTextChangedListener(changemcua);
+        rapidez_tangencial_final.addTextChangedListener(changemcua);
+        aceleracion_tangencial.addTextChangedListener(changemcua);
 
         btn_calcular_mcua.setOnClickListener(v -> {
 
@@ -1167,12 +1183,85 @@ public class calculadora_MCUA extends Fragment {
             }
         });
 
+    }
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mcua", Context.MODE_PRIVATE);
+        String radio1 = preferences.getString("radio","");
+        String longitud_arco1 = preferences.getString("longitud_arco","");
+        String aceleracion_tangencial1= preferences.getString("aceleracion_tangencial","");
+        String rapidez_tangencial_inicial1 = preferences.getString("rapidez_tangencial_inicial","");
+        String rapidez_tangencial_final1 = preferences.getString("rapidez_tangencial_final","");
+        String angulo1 = preferences.getString("angulo","");
+        String aceleracion_angular1 = preferences.getString("aceleracion_angular","");
+        String tiempo1 = preferences.getString("tiempo","");
+        String rapidez_angular_inicial1 = preferences.getString("rapidez_angular_inicial","");
+        String rapidez_angular_final1 = preferences.getString("rapidez_angular_final","");
+
+        radio.setText(radio1);
+        longitud_arco.setText(longitud_arco1);
+        aceleracion_tangencial.setText(aceleracion_tangencial1);
+        rapidez_tangencial_inicial.setText(rapidez_tangencial_inicial1);
+        rapidez_tangencial_final.setText(rapidez_tangencial_final1);
+        angulo.setText(angulo1);
+        aceleracion_angular.setText(aceleracion_angular1);
+        tiempo.setText(tiempo1);
+        rapidez_angular_inicial.setText(rapidez_angular_inicial1);
+        rapidez_angular_final.setText(rapidez_angular_final1);
+
+    }
+
+    private void preferencias_mcua (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mcua", Context.MODE_PRIVATE);
+
+        String radio1 = radio.getText().toString();
+        String longitud_arco1 = longitud_arco.getText().toString();
+        String aceleracion_tangencial1 = aceleracion_tangencial.getText().toString();
+        String rapidez_tangencial_inicial1= rapidez_tangencial_inicial.getText().toString();
+        String rapidez_tangencial_final1= rapidez_tangencial_final.getText().toString();
+        String angulo1 = angulo.getText().toString();
+        String aceleracion_angular1= aceleracion_angular.getText().toString();
+        String tiempo1= tiempo.getText().toString();
+        String rapidez_angular_inicial1= rapidez_angular_inicial.getText().toString();
+        String rapidez_angular_final1= rapidez_angular_final.getText().toString();
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("radio",radio1);
+        editor.putString("longitud_arco",longitud_arco1);
+        editor.putString("aceleracion_tangencial",aceleracion_tangencial1);
+        editor.putString("rapidez_tangencial_inicial",rapidez_angular_inicial1);
+        editor.putString("rapidez_tangencial_final",rapidez_tangencial_final1);
+        editor.putString("angulo",angulo1);
+        editor.putString("aceleracion_angular",aceleracion_angular1);
+        editor.putString("tiempo",tiempo1);
+        editor.putString("rapidez_angular_inicial",rapidez_angular_inicial1);
+        editor.putString("rapidez_angular_final",rapidez_angular_final1);
 
 
-
-
-
+        editor.commit();
 
 
     }
+
+    private TextWatcher changemcua = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_mcua();
+        }
+    };
+
+
+
 }

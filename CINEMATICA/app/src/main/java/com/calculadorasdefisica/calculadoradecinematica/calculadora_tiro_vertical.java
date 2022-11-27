@@ -2,6 +2,9 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import static java.lang.Double.parseDouble;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -113,6 +118,14 @@ public class calculadora_tiro_vertical extends Fragment {
         calcular=view.findViewById(R.id.btn_calcular_tv);
         navegar =  (FloatingActionButton) view.findViewById(R.id.navegar_tiro_vertical);
 
+        cargarpreferencias();
+
+        gravedad.addTextChangedListener(changemrua);
+        tiempo.addTextChangedListener(changemrua);
+        altura.addTextChangedListener(changemrua);
+        velocidad_inicial.addTextChangedListener(changemrua);
+
+
         calcular.setOnClickListener(v -> {
 
             String gravedad1,tiempo1,altura1,velocidad_inicial1;
@@ -121,7 +134,6 @@ public class calculadora_tiro_vertical extends Fragment {
             tiempo1 = tiempo.getText().toString();
             altura1= altura.getText().toString();
             velocidad_inicial1 = velocidad_inicial.getText().toString();
-
 
             String seleccion = spinner_altura.getSelectedItem().toString();
             if(seleccion.equals("km  ")&& !altura1.isEmpty()){
@@ -147,9 +159,7 @@ public class calculadora_tiro_vertical extends Fragment {
                 velocidad_inicial1 = String.valueOf(conversion2);
             }
 
-
-
-            if(velocidad_inicial1.isEmpty()){
+           if(velocidad_inicial1.isEmpty()){
                 if(!gravedad1.isEmpty() && !tiempo1.isEmpty() ){
 
                     double n1, n2, velo_ini;
@@ -160,8 +170,6 @@ public class calculadora_tiro_vertical extends Fragment {
                     velo_ini = n1 * n2 ;
 
                     velocidad_inicial1 = String.valueOf(velo_ini);
-
-
 
                 }
 
@@ -179,8 +187,6 @@ public class calculadora_tiro_vertical extends Fragment {
                 }
                 velocidad_inicial.setText(velocidad_inicial1);
             }
-
-
 
 
             if(!gravedad1.isEmpty() && !velocidad_inicial1.isEmpty() && tiempo1.isEmpty()){
@@ -211,22 +217,15 @@ public class calculadora_tiro_vertical extends Fragment {
             }
 
 
-
-
-
-
         });
 
 
 
 
-
-
-
-
         navegar.setOnClickListener(v -> {
-
             Navigation.findNavController(navegar).navigate(R.id.inf_tiro_vertical);
+            MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+            sonido.start();
         });
 
         ImageButton limpiar  = (ImageButton) view.findViewById(R.id.btn_limpiar_tv);
@@ -273,13 +272,68 @@ public class calculadora_tiro_vertical extends Fragment {
                 velocidad_inicial.setText("");
             }
         });
+    }
+
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_tv", Context.MODE_PRIVATE);
+        String velocidad_inicial1 = preferences.getString("velocidad_inicial","");
+        String tiempo1 = preferences.getString("tiempo","");
+        String altura1 = preferences.getString("altura","");
+        String gravedad1 = preferences.getString("gravedad","");
+
+
+        velocidad_inicial.setText(velocidad_inicial1);
+        tiempo.setText(tiempo1);
+        altura.setText(altura1);
+        gravedad.setText(gravedad1);
+
+    }
+
+    private void preferencias_tv (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_tv", Context.MODE_PRIVATE);
+
+        String velocidad_inicial1 = velocidad_inicial.getText().toString();
+        String tiempo1 = tiempo.getText().toString();
+        String altura1 = altura.getText().toString();
+        String gravedad1 = gravedad.getText().toString();
 
 
 
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("velocidad_inicial",velocidad_inicial1);
+        editor.putString("tiempo", tiempo1);
+        editor.putString("altura",altura1);
+        editor.putString("gravedad",gravedad1);
 
 
 
+        editor.commit();
 
 
     }
+
+    private TextWatcher changemrua = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_tv();
+        }
+    };
+
+
+
+
+
 }

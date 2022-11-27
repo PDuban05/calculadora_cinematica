@@ -3,6 +3,9 @@ package com.calculadorasdefisica.calculadoradecinematica;
 import static java.lang.Double.parseDouble;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -132,6 +137,13 @@ public class caida_libre extends Fragment {
 
         calcular=view.findViewById(R.id.btn_calcular_cl);
         navegar =  (FloatingActionButton) view.findViewById(R.id.navegar_caida_libre);
+        cargarpreferencias();
+
+        gravedad.addTextChangedListener(changecl);
+        tiempo.addTextChangedListener(changecl);
+        altura.addTextChangedListener(changecl);
+        velocidad_inicial.addTextChangedListener(changecl);
+        velocidad_final.addTextChangedListener(changecl);
 
 
         calcular.setOnClickListener(v -> {
@@ -177,11 +189,6 @@ public class caida_libre extends Fragment {
                 conversion3 = velocidad_final2 / 3.6;
                 velo_final = String.valueOf(conversion3);
             }
-
-
-
-
-
 
 
             if(velo_inicial.isEmpty()){
@@ -230,13 +237,6 @@ public class caida_libre extends Fragment {
 
                 velocidad_final.setText(velo_final);
             }
-
-
-
-
-
-
-
 
 
 
@@ -326,22 +326,15 @@ public class caida_libre extends Fragment {
             }
 
 
-
-
-
-
-
-
-
         });
 
 
 
-       
-
         navegar.setOnClickListener(v -> {
 
             Navigation.findNavController(navegar).navigate(R.id.inf_caida_libre);
+            MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+            sonido.start();
         });
 
         ImageButton limpiar  = (ImageButton) view.findViewById(R.id.btn_limpiar_cl);
@@ -398,14 +391,65 @@ public class caida_libre extends Fragment {
                 velocidad_final.getText().clear();
             }
         });
+    }
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_cl", Context.MODE_PRIVATE);
+        String gravedad1 = preferences.getString("gravedad","");
+        String altura1 = preferences.getString("altura","");
+        String tiempo1 = preferences.getString("tiempo","");
+        String velocidad_final1 = preferences.getString("velocidad_final","");
+        String velocidad_inicial1 = preferences.getString("velocidad_inicial","");
+
+        gravedad.setText(gravedad1);
+        altura.setText(altura1);
+        tiempo.setText(tiempo1);
+        velocidad_final.setText(velocidad_final1);
+        velocidad_inicial.setText(velocidad_inicial1);
+
+    }
+
+    private void preferencias_cl (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_cl", Context.MODE_PRIVATE);
+
+        String gravedad1 = gravedad.getText().toString();
+        String altura1 = altura.getText().toString();
+        String tiempo1= tiempo.getText().toString();
+        String velocidad_final1= velocidad_final.getText().toString();
+        String velocidad_inicial1= velocidad_inicial.getText().toString();
 
 
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("gravedad",gravedad1);
+        editor.putString("altura",altura1);
+        editor.putString("tiempo",tiempo1);
+        editor.putString("velocidad_final",velocidad_final1);
+        editor.putString("velocidad_inicial",velocidad_inicial1);
 
-
-
+        editor.commit();
 
 
     }
+
+    private TextWatcher changecl = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_cl();
+        }
+    };
+
 
 
 

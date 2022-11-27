@@ -1,5 +1,6 @@
 package com.calculadorasdefisica.calculadoradecinematica;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -106,33 +107,42 @@ public class inicio extends Fragment {
         Button mcu = view.findViewById(R.id.mcu_home);
         Button tv = view.findViewById(R.id.tv_home);
         Button ca = view.findViewById(R.id.ca_home);
+        MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+
 
         mru.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_MRU);
+            sonido.start();
         });
 
         mcua.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_MCUA);
+            sonido.start();
         });
 
         mrua.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_MRUA);
+            sonido.start();
         });
 
         mpcl.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_MPCL);
+            sonido.start();
         });
 
         mcu.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_MCU);
+            sonido.start();
         });
 
         tv.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.calculadora_tiro_vertical);
+            sonido.start();
         });
 
         ca.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.caida_libre2);
+            sonido.start();
         });
 
     }

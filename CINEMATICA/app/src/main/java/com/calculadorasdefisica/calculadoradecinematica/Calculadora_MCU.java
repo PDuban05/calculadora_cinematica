@@ -2,6 +2,9 @@ package com.calculadorasdefisica.calculadoradecinematica;
 
 import static java.lang.Double.parseDouble;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -156,6 +161,18 @@ public class Calculadora_MCU extends Fragment {
 
         btn_calcular = view.findViewById(R.id.btn_calcular_mcu);
         navegar =  (FloatingActionButton) view.findViewById(R.id.navegar_mcu);
+
+        cargarpreferencias();
+
+        ang.addTextChangedListener(changemcu);
+        rapidez_ang.addTextChangedListener(changemcu);
+        time.addTextChangedListener(changemcu);
+        rapidez_tan.addTextChangedListener(changemcu);
+        longitud_arc.addTextChangedListener(changemcu);
+        radi.addTextChangedListener(changemcu);
+        perio.addTextChangedListener(changemcu);
+        frecu.addTextChangedListener(changemcu);
+        aceleraci_centri.addTextChangedListener(changemcu);
 
 
 
@@ -579,9 +596,11 @@ public class Calculadora_MCU extends Fragment {
 
 
 
-        navegar.setOnClickListener(v -> {
 
+        navegar.setOnClickListener(v -> {
             Navigation.findNavController(navegar).navigate(R.id.inf_mcu);
+            MediaPlayer sonido = MediaPlayer.create(getContext(),R.raw.btn);
+            sonido.start();
         });
 
         ImageButton limpiar = (ImageButton) view.findViewById(R.id.btn_limpiar_mcu);
@@ -672,10 +691,84 @@ public class Calculadora_MCU extends Fragment {
             }
         });
 
+    }
 
+
+    private void cargarpreferencias(){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mcu", Context.MODE_PRIVATE);
+        String angulo = preferences.getString("angulo","");
+        String rapidez_angular = preferences.getString("rapidez_angular","");
+        String tiempo = preferences.getString("tiempo","");
+        String rapidez_tangencial = preferences.getString("rapidez_tangencial","");
+        String longitud_arco = preferences.getString("longitud_arco","");
+        String radio = preferences.getString("radio","");
+        String periodo = preferences.getString("periodo","");
+        String frecuencia = preferences.getString("frecuencia","");
+        String aceleracion_centripeta = preferences.getString("aceleracion_centripeta","");
+
+        ang.setText(angulo);
+        rapidez_ang.setText(rapidez_angular);
+        time.setText(tiempo);
+        rapidez_tan.setText(rapidez_tangencial);
+        longitud_arc.setText(longitud_arco);
+        radi.setText(radio);
+        perio.setText(periodo);
+        frecu.setText(frecuencia);
+        aceleraci_centri.setText(aceleracion_centripeta);
+
+    }
+
+    private void preferencias_mcu (){
+
+        SharedPreferences preferences = getContext().getSharedPreferences("pref_mcu", Context.MODE_PRIVATE);
+
+        String angulo = ang.getText().toString();
+        String rapidez_angular = rapidez_ang.getText().toString();
+        String tiempo= time.getText().toString();
+        String rapidez_tangencial= rapidez_tan.getText().toString();
+        String longitud_arco= longitud_arc.getText().toString();
+        String radio = radi.getText().toString();
+        String periodo= perio.getText().toString();
+        String frecuencia= frecu.getText().toString();
+        String aceleracion_centipetra= aceleraci_centri.getText().toString();
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("angulo",angulo);
+        editor.putString("rapidez_angular",rapidez_angular);
+        editor.putString("tiempo",tiempo);
+        editor.putString("rapidez_tangencial",rapidez_tangencial);
+        editor.putString("longitud_arco",longitud_arco);
+        editor.putString("radio",radio);
+        editor.putString("periodo",periodo);
+        editor.putString("frecuencia",frecuencia);
+        editor.putString("aceleracion_centripeta",aceleracion_centipetra);
+
+
+        editor.commit();
 
 
     }
+
+    private TextWatcher changemcu = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            preferencias_mcu();
+        }
+    };
+
+
+
 
 
 
