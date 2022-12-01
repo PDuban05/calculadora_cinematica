@@ -52,6 +52,7 @@ public class fuerza extends Fragment {
         newton = view.findViewById(R.id.newton);
         kilonewton = view.findViewById(R.id.kilonewton);
         gramo_fuerza = view.findViewById(R.id.gramo_fuerza);
+        kilogramo_fuerza = view.findViewById(R.id.kilogramo_fuerza);
         libra_fuerza = view.findViewById(R.id.libra_fuerza);
         onza_fuerza = view.findViewById(R.id.onza_fuerza);
         joule_metro = view.findViewById(R.id.joule_metro);
@@ -62,6 +63,7 @@ public class fuerza extends Fragment {
         newton.addTextChangedListener(changenewton);
         kilonewton.addTextChangedListener(changekilonewton);
         gramo_fuerza.addTextChangedListener(changegramo_fuerza);
+        kilogramo_fuerza.addTextChangedListener(changekilogramo_fuerza);
 
     }
 
@@ -221,6 +223,56 @@ public class fuerza extends Fragment {
         }
     };
 
+    public TextWatcher changekilogramo_fuerza = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            kilogramo_fuerza1 = kilogramo_fuerza.getText().toString();
+            boolean val = kilogramo_fuerza.isFocused();
+            try {
+                if(!kilogramo_fuerza1.isEmpty() && val ==true){
+
+
+                    newton.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 9.8067));
+                    kilonewton.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 0.0098 ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 1000));
+                    libra_fuerza.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 2.2046));
+                    onza_fuerza.setText(String.valueOf(parseDouble( kilogramo_fuerza1) *  35.274));
+                    joule_metro.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 9.8067));
+                    dina.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 980665));
+                    poundal.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 70.9316));
+                    pondio.setText(String.valueOf(parseDouble( kilogramo_fuerza1) * 1000));
+
+
+                }else if(kilogramo_fuerza1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!kilogramo_fuerza1.isEmpty()){
+                        String newcadena = kilogramo_fuerza1.substring ( 0, kilogramo_fuerza1.length() - 1 );
+                        kilogramo_fuerza.setText(newcadena);
+                        kilogramo_fuerza.setSelection(kilogramo_fuerza.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = kilogramo_fuerza1.substring ( 0, kilogramo_fuerza1.length() - 2 );
+                    kilogramo_fuerza.setText(newcadena);
+                    kilogramo_fuerza.setSelection(kilogramo_fuerza.getText().length());
+                }
+            }
+
+        }
+    };
+
 
 
 
@@ -234,6 +286,7 @@ public class fuerza extends Fragment {
         TextKeyListener.clear(newton.getText());
         TextKeyListener.clear(kilonewton.getText());
         TextKeyListener.clear(kilogramo_fuerza.getText());
+        TextKeyListener.clear(gramo_fuerza.getText());
         TextKeyListener.clear(libra_fuerza.getText());
         TextKeyListener.clear(onza_fuerza.getText());
         TextKeyListener.clear(joule_metro.getText());
