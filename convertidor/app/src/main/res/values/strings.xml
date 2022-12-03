@@ -13,6 +13,40 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="poder">Poder</string>
+
+    <string name="megawatt">Megawatt</string>
+    <string name="megawatt1">MW</string>
+
+    <string name="kilowatt">Megawatt</string>
+    <string name="kilowatt1">kW</string>
+
+    <string name="watt">watt</string>
+    <string name="watt1">W</string>
+
+    <string name="miliwatt">Miliwatt</string>
+    <string name="miliwatt1">mW</string>
+
+    <string name="cv">CV</string>
+    <string name="cv1">hp</string>
+
+    <string name="btu_hora">btu/hora</string>
+    <string name="btu_hora1">btu/h</string>
+
+    <string name="caloria_hora">Caloria/hora</string>
+    <string name="caloria_hora1">cal/h</string>
+
+    <string name="pie_libra_hora">Pie-libra/hora</string>
+    <string name="pie_libra_hora1">lbf·ft/h</string>
+
+    <string name="joule_segundo">Joule/segundo</string>
+    <string name="joule_segundo1">J/s</string>
+
+    <string name="ergio_segundo">Ergio/segundo</string>
+    <string name="ergio_segundo1">erg/s</string>
+
+
     <string name="fuerza">Fuerza</string>
 
     <string name="newton">Newton</string>

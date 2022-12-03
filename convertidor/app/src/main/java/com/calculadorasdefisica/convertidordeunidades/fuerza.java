@@ -64,6 +64,13 @@ public class fuerza extends Fragment {
         kilonewton.addTextChangedListener(changekilonewton);
         gramo_fuerza.addTextChangedListener(changegramo_fuerza);
         kilogramo_fuerza.addTextChangedListener(changekilogramo_fuerza);
+        libra_fuerza.addTextChangedListener(changelibra_fuerza);
+        onza_fuerza.addTextChangedListener(changeonza_fuerza);
+        joule_metro.addTextChangedListener(changejoule_metro);
+        dina.addTextChangedListener(changedina);
+        poundal.addTextChangedListener(changepoundal);
+        pondio.addTextChangedListener(changepondio);
+
 
     }
 
@@ -267,6 +274,294 @@ public class fuerza extends Fragment {
                     String newcadena = kilogramo_fuerza1.substring ( 0, kilogramo_fuerza1.length() - 2 );
                     kilogramo_fuerza.setText(newcadena);
                     kilogramo_fuerza.setSelection(kilogramo_fuerza.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changelibra_fuerza = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            libra_fuerza1 = libra_fuerza.getText().toString();
+            boolean val = libra_fuerza.isFocused();
+            try {
+                if(!libra_fuerza1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( libra_fuerza1) * 4.4482));
+                    kilonewton.setText(String.valueOf(parseDouble( libra_fuerza1) * 0.0044 ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( libra_fuerza1) * 453.5924));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( libra_fuerza1) * 0.4536));
+                    onza_fuerza.setText(String.valueOf(parseDouble( libra_fuerza1) *  16));
+                    joule_metro.setText(String.valueOf(parseDouble( libra_fuerza1) * 4.4482));
+                    dina.setText(String.valueOf(parseDouble( libra_fuerza1) * 444822.1615));
+                    poundal.setText(String.valueOf(parseDouble( libra_fuerza1) * 32.174));
+                    pondio.setText(String.valueOf(parseDouble( libra_fuerza1) * 453.5924));
+
+                }else if(libra_fuerza1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!libra_fuerza1.isEmpty()){
+                        String newcadena = libra_fuerza1.substring ( 0, libra_fuerza1.length() - 1 );
+                        libra_fuerza.setText(newcadena);
+                        libra_fuerza.setSelection(libra_fuerza.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = libra_fuerza1.substring ( 0, libra_fuerza1.length() - 2 );
+                    libra_fuerza.setText(newcadena);
+                    libra_fuerza.setSelection(libra_fuerza.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changeonza_fuerza = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            onza_fuerza1 = onza_fuerza.getText().toString();
+            boolean val = onza_fuerza.isFocused();
+            try {
+                if(!onza_fuerza1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( onza_fuerza1) * 0.278));
+                    kilonewton.setText(String.valueOf(parseDouble( onza_fuerza1) * (2.7801 * Math.pow(10,-4)) ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( onza_fuerza1) * 28.3495));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( onza_fuerza1) * 0.0283));
+                    libra_fuerza.setText(String.valueOf(parseDouble( onza_fuerza1) *  0.0625));
+                    joule_metro.setText(String.valueOf(parseDouble( onza_fuerza1) * 0.278));
+                    dina.setText(String.valueOf(parseDouble( onza_fuerza1) * 27801.3851));
+                    poundal.setText(String.valueOf(parseDouble( onza_fuerza1) * 2.0109));
+                    pondio.setText(String.valueOf(parseDouble( onza_fuerza1) * 28.3495));
+
+                }else if(onza_fuerza1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!onza_fuerza1.isEmpty()){
+                        String newcadena = onza_fuerza1.substring ( 0, onza_fuerza1.length() - 1 );
+                        onza_fuerza.setText(newcadena);
+                        onza_fuerza.setSelection(onza_fuerza.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = onza_fuerza1.substring ( 0, onza_fuerza1.length() - 2 );
+                    onza_fuerza.setText(newcadena);
+                    onza_fuerza.setSelection(onza_fuerza.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changejoule_metro = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            joule_metro1 = joule_metro.getText().toString();
+            boolean val = joule_metro.isFocused();
+            try {
+                if(!joule_metro1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( joule_metro1) * 1));
+                    kilonewton.setText(String.valueOf(parseDouble( joule_metro1) * 0.001 ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( joule_metro1) * 101.9716));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( joule_metro1) * 0.102));
+                    libra_fuerza.setText(String.valueOf(parseDouble( joule_metro1) *  0.2248));
+                    onza_fuerza.setText(String.valueOf(parseDouble( joule_metro1) * 3.5969));
+                    dina.setText(String.valueOf(parseDouble( joule_metro1) * 100000));
+                    poundal.setText(String.valueOf(parseDouble( joule_metro1) * 7.233));
+                    pondio.setText(String.valueOf(parseDouble( joule_metro1) * 101.9716));
+
+                }else if(joule_metro1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!joule_metro1.isEmpty()){
+                        String newcadena = joule_metro1.substring ( 0, joule_metro1.length() - 1 );
+                        joule_metro.setText(newcadena);
+                        joule_metro.setSelection(joule_metro.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = joule_metro1.substring ( 0, joule_metro1.length() - 2 );
+                    joule_metro.setText(newcadena);
+                    joule_metro.setSelection(joule_metro.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changedina = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            dina1 = dina.getText().toString();
+            boolean val = dina.isFocused();
+            try {
+                if(!dina1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( dina1) * (1 * Math.pow(10,-5))));
+                    kilonewton.setText(String.valueOf(parseDouble( dina1) * (1 * Math.pow(10,-8)) ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( dina1) * 0.001));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( dina1) * (1.0197 * Math.pow(10,-6))));
+                    libra_fuerza.setText(String.valueOf(parseDouble( dina1) *  (2.2481 * Math.pow(10,-6))));
+                    onza_fuerza.setText(String.valueOf(parseDouble( dina1) * (3.5969 * Math.pow(10,-5))));
+                    joule_metro.setText(String.valueOf(parseDouble( dina1) * (1 * Math.pow(10,-5))));
+                    poundal.setText(String.valueOf(parseDouble( dina1) * (7.233 * Math.pow(10,-5))));
+                    pondio.setText(String.valueOf(parseDouble( dina1) * 0.001));
+
+                }else if(dina1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!dina1.isEmpty()){
+                        String newcadena = dina1.substring ( 0, dina1.length() - 1 );
+                        dina.setText(newcadena);
+                        dina.setSelection(dina.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = dina1.substring ( 0, dina1.length() - 2 );
+                    dina.setText(newcadena);
+                    dina.setSelection(dina.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changepoundal = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            poundal1 = poundal.getText().toString();
+            boolean val = poundal.isFocused();
+            try {
+                if(!poundal1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( poundal1) * 0.1383));
+                    kilonewton.setText(String.valueOf(parseDouble( poundal1) * (1.3825 * Math.pow(10,-8)) ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( poundal1) * 14.0981));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( poundal1) * 0.0141));
+                    libra_fuerza.setText(String.valueOf(parseDouble( poundal1) *  0.0311));
+                    onza_fuerza.setText(String.valueOf(parseDouble( poundal1) * 0.4973));
+                    joule_metro.setText(String.valueOf(parseDouble( poundal1) * 0.1383));
+                    dina.setText(String.valueOf(parseDouble( poundal1) * 13825.4954));
+                    pondio.setText(String.valueOf(parseDouble( poundal1) * 14.0981));
+
+                }else if(poundal1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!poundal1.isEmpty()){
+                        String newcadena = poundal1.substring ( 0, poundal1.length() - 1 );
+                        poundal.setText(newcadena);
+                        poundal.setSelection(poundal.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = poundal1.substring ( 0, poundal1.length() - 2 );
+                    poundal.setText(newcadena);
+                    poundal.setSelection(poundal.getText().length());
+                }
+            }
+
+        }
+    };
+
+    public TextWatcher changepondio = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            pondio1 = pondio.getText().toString();
+            boolean val = pondio.isFocused();
+            try {
+                if(!pondio1.isEmpty() && val ==true){
+
+                    newton.setText(String.valueOf(parseDouble( pondio1) * 0.0098));
+                    kilonewton.setText(String.valueOf(parseDouble( pondio1) * (9.8067 * Math.pow(10,-6)) ));
+                    gramo_fuerza.setText(String.valueOf(parseDouble( pondio1) * 1));
+                    kilogramo_fuerza.setText(String.valueOf(parseDouble( pondio1) * 0.001));
+                    libra_fuerza.setText(String.valueOf(parseDouble( pondio1) *  0.0022));
+                    onza_fuerza.setText(String.valueOf(parseDouble( pondio1) * 0.0353));
+                    joule_metro.setText(String.valueOf(parseDouble( pondio1) * 0.0098));
+                    dina.setText(String.valueOf(parseDouble( pondio1) * 980.665));
+                    poundal.setText(String.valueOf(parseDouble( pondio1) * 0.0709));
+
+                }else if(pondio1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!pondio1.isEmpty()){
+                        String newcadena = pondio1.substring ( 0, pondio1.length() - 1 );
+                        pondio.setText(newcadena);
+                        pondio.setSelection(pondio.getText().length());
+
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = pondio1.substring ( 0, pondio1.length() - 2 );
+                    pondio.setText(newcadena);
+                    pondio.setSelection(pondio.getText().length());
                 }
             }
 

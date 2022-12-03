@@ -57,4 +57,14 @@
         android:name="com.calculadorasdefisica.convertidordeunidades.fuerza"
         android:label="fragment_fuerza"
         tools:layout="@layout/fragment_fuerza" />
+    <fragment
+        android:id="@+id/poder2"
+        android:name="com.calculadorasdefisica.convertidordeunidades.poder"
+        android:label="fragment_poder"
+        tools:layout="@layout/fragment_poder" />
+    <fragment
+        android:id="@+id/potencia"
+        android:name="com.calculadorasdefisica.convertidordeunidades.potencia"
+        android:label="fragment_potencia"
+        tools:layout="@layout/fragment_potencia" />
 </navigation>
