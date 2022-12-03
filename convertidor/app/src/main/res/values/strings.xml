@@ -13,13 +13,31 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="Almacenamiento_datos">Almacenamiento de datos</string>
+
+    <string name="bit">Bit</string>
+    <string name="bit1">bit</string>
+
+    <string name="kilobit">Kilobit</string>
+    <string name="kilobit1">kbit</string>
+
+    <string name="megabit">Mbit</string>
+
+
+
+
+
+
+
+
+
 
     <string name="poder">Poder</string>
 
     <string name="megawatt">Megawatt</string>
     <string name="megawatt1">MW</string>
 
-    <string name="kilowatt">Megawatt</string>
+    <string name="kilowatt">Kilowatt</string>
     <string name="kilowatt1">kW</string>
 
     <string name="watt">watt</string>
