@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#807A7A"
+
     tools:context="com.calculadorasdefisica.convertidordeunidades.inicio"
 
 
@@ -29,7 +29,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/regla"
                 android:paddingStart="10dp"
-                android:text="@string/longitud" />
+                android:text="@string/longitud"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_velocidad"
@@ -39,7 +40,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/coche"
                 android:paddingStart="10dp"
-                android:text="@string/velocidad" />
+                android:text="@string/velocidad"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_tiempo"
@@ -49,7 +51,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/tiempo"
                 android:paddingStart="10dp"
-                android:text="@string/tiempo" />
+                android:text="@string/tiempo"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/aceleracion"
@@ -59,7 +62,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/velocidad"
                 android:paddingStart="10dp"
-                android:text="@string/aceleracion" />
+                android:text="@string/aceleracion"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/energia"
@@ -69,7 +73,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/energia"
                 android:paddingStart="10dp"
-                android:text="@string/energia" />
+                android:text="@string/energia"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/fuerza"
@@ -79,7 +84,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/fuerza"
                 android:paddingStart="10dp"
-                android:text="@string/fuerza" />
+                android:text="@string/fuerza"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/poder"
@@ -89,7 +95,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/rayo"
                 android:paddingStart="10dp"
-                android:text="@string/poder"/>
+                android:text="@string/poder"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/almacenamiento_datos"
@@ -99,7 +106,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/data"
                 android:paddingStart="10dp"
-                android:text="@string/Almacenamiento_datos"/>
+                android:text="@string/Almacenamiento_datos"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/volumen"
@@ -109,7 +117,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/cubo"
                 android:paddingStart="10dp"
-                android:text="@string/volumen"/>
+                android:text="@string/volumen"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/peso"
@@ -119,7 +128,8 @@
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/peso"
                 android:paddingStart="10dp"
-                android:text="@string/masa"/>
+                android:text="@string/masa"
+                android:elevation="4dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/temperatura"
@@ -128,8 +138,10 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
                 android:drawableStart="@drawable/temperatura"
+                android:layout_marginBottom="5dp"
                 android:paddingStart="10dp"
-                android:text="@string/temperatura"/>
+                android:text="@string/temperatura"
+                android:elevation="4dp"/>
 
 
         </LinearLayout>
