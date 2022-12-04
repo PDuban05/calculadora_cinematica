@@ -67,4 +67,14 @@
         android:name="com.calculadorasdefisica.convertidordeunidades.potencia"
         android:label="fragment_potencia"
         tools:layout="@layout/fragment_potencia" />
+    <fragment
+        android:id="@+id/datos"
+        android:name="com.calculadorasdefisica.convertidordeunidades.datos"
+        android:label="fragment_datos"
+        tools:layout="@layout/fragment_datos" />
+    <fragment
+        android:id="@+id/volumen"
+        android:name="com.calculadorasdefisica.convertidordeunidades.volumen"
+        android:label="fragment_volumen"
+        tools:layout="@layout/fragment_volumen" />
 </navigation>

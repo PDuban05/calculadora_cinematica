@@ -50,6 +50,8 @@ public class inicio extends Fragment {
         Button energia = view.findViewById(R.id.energia);
         Button fuerza = view.findViewById(R.id.fuerza);
         Button poder = view.findViewById(R.id.poder);
+        Button datos = view.findViewById(R.id.almacenamiento_datos);
+        Button volumen = view.findViewById(R.id.volumen);
 
         longitud.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.longitud);
@@ -77,6 +79,14 @@ public class inicio extends Fragment {
 
         poder.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.poder2);
+        });
+
+        datos.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.datos);
+        });
+
+        volumen.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.volumen);
         });
     }
 

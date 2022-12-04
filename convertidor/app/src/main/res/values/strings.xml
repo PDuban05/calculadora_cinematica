@@ -13,6 +13,39 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="volumen">Volumen</string>
+
+    <string name="litro">Litro</string>
+    <string name="litro1">l</string>
+
+    <string name="decilitro">Decilitro</string>
+    <string name="decilitro1">dl</string>
+
+    <string name="mililitro">Mililitro</string>
+    <string name="mililitro1">ml</string>
+
+    <string name="metro_3">Metro³</string>
+    <string name="metro_31">m³</string>
+
+    <string name="centimetro_3">Centimetro³</string>
+    <string name="centimetro_31">cm³</string>
+
+    <string name="yarda_3">Yarda³</string>
+    <string name="yarda_31">yd³</string>
+
+    <string name="pie_3">Pie³</string>
+    <string name="pie_31">ft³</string>
+
+    <string name="pulgada_3">Pulgada³</string>
+    <string name="pulgada_31">in³</string>
+
+    <string name="barril">barril</string>
+    <string name="barril1">bbl</string>
+
+    <string name="galon">Galón</string>
+    <string name="galon1">gal</string>
+
+
     <string name="Almacenamiento_datos">Almacenamiento de datos</string>
 
     <string name="bit">Bit</string>
@@ -21,15 +54,35 @@
     <string name="kilobit">Kilobit</string>
     <string name="kilobit1">kbit</string>
 
-    <string name="megabit">Mbit</string>
+    <string name="megabit">Megabit</string>
+    <string name="megabit1">Mbit</string>
 
+    <string name="gigabit">Gigabit</string>
+    <string name="gigabit1">Gbit</string>
 
+    <string name="terabit">terabit</string>
+    <string name="terabit1">Tbit</string>
 
+    <string name="petabit">Petabit</string>
+    <string name="petabit1">Pbit</string>
 
+    <string name="bite_">Byte</string>
+    <string name="bite_1">B</string>
 
+    <string name="kilobyte">Kilobyte</string>
+    <string name="kilobyte1">kB</string>
 
+    <string name="megabyte">Megabyte</string>
+    <string name="megabyte1">MB</string>
 
+    <string name="gigabyte">Gigabyte</string>
+    <string name="gigabyte1">GB</string>
 
+    <string name="terabyte">Terabyte</string>
+    <string name="terabyte1">TB</string>
+
+    <string name="petabyte">Petabyte</string>
+    <string name="petabyte1">PB</string>
 
 
     <string name="poder">Poder</string>
