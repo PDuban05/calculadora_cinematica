@@ -77,4 +77,9 @@
         android:name="com.calculadorasdefisica.convertidordeunidades.volumen"
         android:label="fragment_volumen"
         tools:layout="@layout/fragment_volumen" />
+    <fragment
+        android:id="@+id/peso2"
+        android:name="com.calculadorasdefisica.convertidordeunidades.peso"
+        android:label="fragment_peso"
+        tools:layout="@layout/fragment_peso" />
 </navigation>

@@ -13,6 +13,36 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="masa">Masa/Peso</string>
+
+    <string name="miligramo">Miligramo</string>
+    <string name="miligramo1">mg</string>
+
+    <string name="gramo">Gramo</string>
+    <string name="gramo1">g</string>
+
+    <string name="kilogramo">Kilogramo</string>
+    <string name="kilogramo1">kg</string>
+
+    <string name="tonelada">Tonelada</string>
+    <string name="tonelada1">t</string>
+
+    <string name="libra">Libra</string>
+    <string name="libra1">lbs</string>
+
+    <string name="onza">Onza</string>
+    <string name="onza1">oz</string>
+
+    <string name="quilate">Quilate</string>
+    <string name="quilate1">ct</string>
+
+    <string name="grano">Grano</string>
+    <string name="grano1">gr</string>
+
+    <string name="newton_p">Newton</string>
+    <string name="newton_p1">N</string>
+
+
     <string name="volumen">Volumen</string>
 
     <string name="litro">Litro</string>

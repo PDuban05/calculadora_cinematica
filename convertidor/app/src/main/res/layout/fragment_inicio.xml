@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
-                android:drawableStart="@drawable/ruler"
+                android:drawableStart="@drawable/regla"
                 android:paddingStart="10dp"
                 android:text="@string/longitud" />
 
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
-                android:drawableStart="@drawable/car"
+                android:drawableStart="@drawable/coche"
                 android:paddingStart="10dp"
                 android:text="@string/velocidad" />
 
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
-                android:drawableStart="@drawable/reloj"
+                android:drawableStart="@drawable/tiempo"
                 android:paddingStart="10dp"
                 android:text="@string/tiempo" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
-                android:drawableStart="@drawable/aceleracion"
+                android:drawableStart="@drawable/velocidad"
                 android:paddingStart="10dp"
                 android:text="@string/aceleracion" />
 
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/cards"
-                android:drawableStart="@drawable/poder"
+                android:drawableStart="@drawable/rayo"
                 android:paddingStart="10dp"
                 android:text="@string/poder"/>
 
@@ -110,6 +110,16 @@
                 android:drawableStart="@drawable/cubo"
                 android:paddingStart="10dp"
                 android:text="@string/volumen"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cards"
+                android:drawableStart="@drawable/peso"
+                android:paddingStart="10dp"
+                android:text="@string/masa"/>
 
 
         </LinearLayout>
