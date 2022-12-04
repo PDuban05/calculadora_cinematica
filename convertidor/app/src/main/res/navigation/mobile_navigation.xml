@@ -82,4 +82,9 @@
         android:name="com.calculadorasdefisica.convertidordeunidades.peso"
         android:label="fragment_peso"
         tools:layout="@layout/fragment_peso" />
+    <fragment
+        android:id="@+id/temperatura2"
+        android:name="com.calculadorasdefisica.convertidordeunidades.temperatura"
+        android:label="fragment_temperatura"
+        tools:layout="@layout/fragment_temperatura" />
 </navigation>

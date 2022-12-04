@@ -60,6 +60,11 @@ public class peso extends Fragment {
         gramo.addTextChangedListener(changegramo);
         kilogramo.addTextChangedListener(changekilogramo);
         tonelada.addTextChangedListener(changetonelada);
+        libra.addTextChangedListener(changelibra);
+        onza.addTextChangedListener(changeonza);
+        quilate.addTextChangedListener(changequilate);
+        grano.addTextChangedListener(changegrano);
+        newton.addTextChangedListener(changenewton);
     }
 
     public TextWatcher changemiligramo= new TextWatcher() {
@@ -241,6 +246,236 @@ public class peso extends Fragment {
                     String newcadena = tonelada1.substring ( 0, tonelada1.length() - 2 );
                     tonelada.setText(newcadena);
                     tonelada.setSelection(tonelada.getText().length());
+                }
+            }
+        }
+    };
+
+    public TextWatcher changelibra= new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            libra1 = libra.getText().toString();
+            boolean val = libra.isFocused();
+            try {
+                if(!libra1.isEmpty() && val ==true){
+
+                    miligramo.setText(String.valueOf(parseDouble(libra1) * 453592.37));
+                    gramo.setText(String.valueOf(parseDouble(libra1) * 453.5924));
+                    kilogramo.setText(String.valueOf(parseDouble(libra1) * 0.4536));
+                    tonelada.setText(String.valueOf(parseDouble(libra1) * (4.5359 *Math.pow(10,-4))));
+                    onza.setText(String.valueOf(parseDouble(libra1) * 16));
+                    quilate.setText(String.valueOf(parseDouble(libra1) * 2267.9619));
+                    grano.setText(String.valueOf(parseDouble(libra1) * 7000));
+                    newton.setText(String.valueOf(parseDouble(libra1) * 4.4482));
+
+
+                }else if(libra1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!libra1.isEmpty()){
+                        String newcadena = libra1.substring ( 0, libra1.length() - 1 );
+                        libra.setText(newcadena);
+                        libra.setSelection(libra.getText().length());
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = libra1.substring ( 0, libra1.length() - 2 );
+                    libra.setText(newcadena);
+                    libra.setSelection(libra.getText().length());
+                }
+            }
+        }
+    };
+
+    public TextWatcher changeonza= new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            onza1 = onza.getText().toString();
+            boolean val = onza.isFocused();
+            try {
+                if(!onza1.isEmpty() && val ==true){
+
+                    miligramo.setText(String.valueOf(parseDouble(onza1) * 28349.5231));
+                    gramo.setText(String.valueOf(parseDouble(onza1) * 28.3495));
+                    kilogramo.setText(String.valueOf(parseDouble(onza1) * 0.0283));
+                    tonelada.setText(String.valueOf(parseDouble(onza1) * (2.835 *Math.pow(10,-5))));
+                    libra.setText(String.valueOf(parseDouble(onza1) * 0.0625));
+                    quilate.setText(String.valueOf(parseDouble(onza1) * 141.7476));
+                    grano.setText(String.valueOf(parseDouble(onza1) * 437.5));
+                    newton.setText(String.valueOf(parseDouble(onza1) * 0.278));
+
+
+                }else if(onza1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!onza1.isEmpty()){
+                        String newcadena = onza1.substring ( 0, onza1.length() - 1 );
+                        onza.setText(newcadena);
+                        onza.setSelection(onza.getText().length());
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = onza1.substring ( 0, onza1.length() - 2 );
+                    onza.setText(newcadena);
+                    onza.setSelection(onza.getText().length());
+                }
+            }
+        }
+    };
+
+    public TextWatcher changequilate= new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            quilate1 = quilate.getText().toString();
+            boolean val = quilate.isFocused();
+            try {
+                if(!quilate1.isEmpty() && val ==true){
+
+                    miligramo.setText(String.valueOf(parseDouble(quilate1) * 200));
+                    gramo.setText(String.valueOf(parseDouble(quilate1) * 0.2));
+                    kilogramo.setText(String.valueOf(parseDouble(quilate1) * (2*Math.pow(10,-4))));
+                    tonelada.setText(String.valueOf(parseDouble(quilate1) * (2 *Math.pow(10,-7))));
+                    libra.setText(String.valueOf(parseDouble(quilate1) * (4.4092 *Math.pow(10,-4))));
+                    onza.setText(String.valueOf(parseDouble(quilate1) * 0.0071));
+                    grano.setText(String.valueOf(parseDouble(quilate1) * 3.0865));
+                    newton.setText(String.valueOf(parseDouble(quilate1) * 0.002));
+
+
+                }else if(quilate1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!quilate1.isEmpty()){
+                        String newcadena = quilate1.substring ( 0, quilate1.length() - 1 );
+                        quilate.setText(newcadena);
+                        quilate.setSelection(quilate.getText().length());
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = quilate1.substring ( 0, quilate1.length() - 2 );
+                    quilate.setText(newcadena);
+                    quilate.setSelection(quilate.getText().length());
+                }
+            }
+        }
+    };
+
+    public TextWatcher changegrano= new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            grano1 = grano.getText().toString();
+            boolean val = grano.isFocused();
+            try {
+                if(!grano1.isEmpty() && val ==true){
+
+                    miligramo.setText(String.valueOf(parseDouble(grano1) * 64.7989));
+                    gramo.setText(String.valueOf(parseDouble(grano1) * 0.0648));
+                    kilogramo.setText(String.valueOf(parseDouble(grano1) * (6.4799*Math.pow(10,-5))));
+                    tonelada.setText(String.valueOf(parseDouble(grano1) * (6.4799 *Math.pow(10,-8))));
+                    libra.setText(String.valueOf(parseDouble(grano1) * (1.4286 *Math.pow(10,-4))));
+                    onza.setText(String.valueOf(parseDouble(grano1) * 0.0023));
+                    quilate.setText(String.valueOf(parseDouble(grano1) * 0.324));
+                    newton.setText(String.valueOf(parseDouble(grano1) * (6.3546 *Math.pow(10,-4)) ));
+
+
+                }else if(grano1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!grano1.isEmpty()){
+                        String newcadena = grano1.substring ( 0, grano1.length() - 1 );
+                        grano.setText(newcadena);
+                        grano.setSelection(grano.getText().length());
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = grano1.substring ( 0, grano1.length() - 2 );
+                    grano.setText(newcadena);
+                    grano.setSelection(grano.getText().length());
+                }
+            }
+        }
+    };
+
+    public TextWatcher changenewton= new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            newton1 = newton.getText().toString();
+            boolean val = newton.isFocused();
+            try {
+                if(!newton1.isEmpty() && val ==true){
+
+                    miligramo.setText(String.valueOf(parseDouble(newton1) * 101971.6213));
+                    gramo.setText(String.valueOf(parseDouble(newton1) * 101.9716));
+                    kilogramo.setText(String.valueOf(parseDouble(newton1) * 0.102));
+                    tonelada.setText(String.valueOf(parseDouble(newton1) * (1.0197 *Math.pow(10,-4))));
+                    libra.setText(String.valueOf(parseDouble(newton1) * 0.2248 ));
+                    onza.setText(String.valueOf(parseDouble(newton1) * 3.5969));
+                    quilate.setText(String.valueOf(parseDouble(newton1) * 509.8581));
+                    grano.setText(String.valueOf(parseDouble(newton1) * 1573.6626 ));
+
+
+                }else if(newton1.isEmpty()){
+                    limpiar();
+                }
+            }catch (Exception e){
+
+                try{
+                    if (!newton1.isEmpty()){
+                        String newcadena = newton1.substring ( 0, newton1.length() - 1 );
+                        newton.setText(newcadena);
+                        newton.setSelection(newton.getText().length());
+                    }
+                }catch (Exception e1){
+
+                    String newcadena = newton1.substring ( 0, newton1.length() - 2 );
+                    newton.setText(newcadena);
+                    newton.setSelection(newton.getText().length());
                 }
             }
         }

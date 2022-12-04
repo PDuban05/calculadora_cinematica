@@ -53,6 +53,7 @@ public class inicio extends Fragment {
         Button datos = view.findViewById(R.id.almacenamiento_datos);
         Button volumen = view.findViewById(R.id.volumen);
         Button masa = view.findViewById(R.id.peso);
+        Button temperatura = view.findViewById(R.id.temperatura);
 
         longitud.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.longitud);
@@ -92,6 +93,10 @@ public class inicio extends Fragment {
 
         masa.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.peso2);
+        });
+
+        temperatura.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.temperatura2);
         });
     }
 

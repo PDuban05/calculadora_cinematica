@@ -121,6 +121,16 @@
                 android:paddingStart="10dp"
                 android:text="@string/masa"/>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/temperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cards"
+                android:drawableStart="@drawable/temperatura"
+                android:paddingStart="10dp"
+                android:text="@string/temperatura"/>
+
 
         </LinearLayout>
     </ScrollView>
