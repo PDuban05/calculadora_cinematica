@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+    android:label="@string/velocidad"
     app:startDestination="@id/inicio">
 
     <fragment
@@ -30,61 +31,56 @@
     <fragment
         android:id="@+id/longitud"
         android:name="com.calculadorasdefisica.convertidordeunidades.longitud"
-        android:label="fragment_longitud"
+        android:label="@string/longitud"
         tools:layout="@layout/fragment_longitud" />
     <fragment
         android:id="@+id/velocidad"
         android:name="com.calculadorasdefisica.convertidordeunidades.velocidad"
-        android:label="fragment_velocidad"
+        android:label="@string/velocidad"
         tools:layout="@layout/fragment_velocidad" />
     <fragment
         android:id="@+id/tiempo"
         android:name="com.calculadorasdefisica.convertidordeunidades.tiempo"
-        android:label="fragment_tiempo"
+        android:label="@string/tiempo"
         tools:layout="@layout/fragment_tiempo" />
     <fragment
         android:id="@+id/aceleracion"
         android:name="com.calculadorasdefisica.convertidordeunidades.aceleracion"
-        android:label="fragment_aceleracion"
+        android:label="@string/aceleracion"
         tools:layout="@layout/fragment_aceleracion" />
     <fragment
         android:id="@+id/energia2"
         android:name="com.calculadorasdefisica.convertidordeunidades.energia"
-        android:label="fragment_energia"
+        android:label="@string/energia"
         tools:layout="@layout/fragment_energia" />
     <fragment
         android:id="@+id/fuerza2"
         android:name="com.calculadorasdefisica.convertidordeunidades.fuerza"
-        android:label="fragment_fuerza"
+        android:label="@string/fuerza"
         tools:layout="@layout/fragment_fuerza" />
     <fragment
         android:id="@+id/poder2"
         android:name="com.calculadorasdefisica.convertidordeunidades.poder"
-        android:label="fragment_poder"
+        android:label="@string/poder"
         tools:layout="@layout/fragment_poder" />
-    <fragment
-        android:id="@+id/potencia"
-        android:name="com.calculadorasdefisica.convertidordeunidades.potencia"
-        android:label="fragment_potencia"
-        tools:layout="@layout/fragment_potencia" />
     <fragment
         android:id="@+id/datos"
         android:name="com.calculadorasdefisica.convertidordeunidades.datos"
-        android:label="fragment_datos"
+        android:label="@string/Almacenamiento_datos"
         tools:layout="@layout/fragment_datos" />
     <fragment
         android:id="@+id/volumen"
         android:name="com.calculadorasdefisica.convertidordeunidades.volumen"
-        android:label="fragment_volumen"
+        android:label="@string/volumen"
         tools:layout="@layout/fragment_volumen" />
     <fragment
         android:id="@+id/peso2"
         android:name="com.calculadorasdefisica.convertidordeunidades.peso"
-        android:label="fragment_peso"
+        android:label="@string/masa"
         tools:layout="@layout/fragment_peso" />
     <fragment
         android:id="@+id/temperatura2"
         android:name="com.calculadorasdefisica.convertidordeunidades.temperatura"
-        android:label="fragment_temperatura"
+        android:label="@string/temperatura"
         tools:layout="@layout/fragment_temperatura" />
 </navigation>
