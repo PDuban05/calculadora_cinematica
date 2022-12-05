@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "928587983173",
+    "project_id": "prueba-4dd37",
+    "storage_bucket": "prueba-4dd37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928587983173:android:a211a3e494c56c9597b62c",
+        "android_client_info": {
+          "package_name": "com.example.convertidordeunidades"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928587983173-sgbhlt6v8q3nim9sohg84641fd3d22mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWx1KEdNTvbtEZbeNtwo_bydg4A-EGF3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928587983173-sgbhlt6v8q3nim9sohg84641fd3d22mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

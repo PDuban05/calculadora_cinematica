@@ -16,13 +16,17 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.example.convertidordeunidades.R;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
 
 
 public class energia extends Fragment {
 
     EditText megajoule,kilojoule,joule,kilowatt_hora,watt_hora,btu_it,caloria_it,tonelada_explosivos,kilogramo_fuerza_metro,pie_libra_fuerza,pie_poundal,ergio,electronvolt;
     String megajoule1,kilojoule1,joule1,kilowatt_hora1,watt_hora1,btu_it1,caloria_it1,tonelada_explosivos1,kilogramo_fuerza_metro1,pie_libra_fuerza1,pie_poundal1,ergio1,electronvolt1;
-
+    private AdView mAdView, mAdView2;
 
     public energia() {
         // Required empty public constructor
@@ -46,6 +50,85 @@ public class energia extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        mAdView = view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Code to be executed when the user is about to return
+                // to the app after tapping on an ad.
+            }
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError adError) {
+                // Code to be executed when an ad request fails.
+            }
+
+            @Override
+            public void onAdImpression() {
+                // Code to be executed when an impression is recorded
+                // for an ad.
+            }
+
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when an ad opens an overlay that
+                // covers the screen.
+            }
+        });
+
+
+        mAdView2 = view.findViewById(R.id.adView1);
+        AdRequest adRequest2 = new AdRequest.Builder().build();
+        mAdView2.loadAd(adRequest2);
+
+        mAdView2.setAdListener(new AdListener() {
+            @Override
+            public void onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Code to be executed when the user is about to return
+                // to the app after tapping on an ad.
+            }
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError adError) {
+                // Code to be executed when an ad request fails.
+            }
+
+            @Override
+            public void onAdImpression() {
+                // Code to be executed when an impression is recorded
+                // for an ad.
+            }
+
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when an ad opens an overlay that
+                // covers the screen.
+            }
+        });
 
     megajoule = view.findViewById(R.id.megajoule);
     kilojoule = view.findViewById(R.id.kilojoule);
